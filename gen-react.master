@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:master="http://www.brainspeedtech.com/swarm/master" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
-  <notation:Diagram xmi:id="_oKsm8DbBEemYGf29ozlhPQ" type="Master" element="_oKsm8jbBEemYGf29ozlhPQ" measurementUnit="Pixel">
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_oKsm8TbBEemYGf29ozlhPQ"/>
-  </notation:Diagram>
-  <master:MasterDesign xmi:id="_oKsm8jbBEemYGf29ozlhPQ" name="gen-react"/>
-</xmi:XMI>
