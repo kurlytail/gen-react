@@ -11,6 +11,7 @@ info: Generated testoutput/.gitignore from template node_modules/@kurlytail/gen-
 info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-npm/templates/.npmignore._
 info: Generated testoutput/.prettierrc from template node_modules/@kurlytail/gen-npm/templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template node_modules/@kurlytail/gen-npm/templates/Jenkinsfile._
+info: loading extension templates/extensions/package-json-react._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-misc._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-jest._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-babel._
@@ -39,6 +40,7 @@ info: Generated testoutput/.gitignore from template node_modules/@kurlytail/gen-
 info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-npm/templates/.npmignore._
 info: Generated testoutput/.prettierrc from template node_modules/@kurlytail/gen-npm/templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template node_modules/@kurlytail/gen-npm/templates/Jenkinsfile._
+info: loading extension templates/extensions/package-json-react._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-misc._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-jest._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-babel._
@@ -67,6 +69,7 @@ info: Generated testoutput/.gitignore from template node_modules/@kurlytail/gen-
 info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-npm/templates/.npmignore._
 info: Generated testoutput/.prettierrc from template node_modules/@kurlytail/gen-npm/templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template node_modules/@kurlytail/gen-npm/templates/Jenkinsfile._
+info: loading extension templates/extensions/package-json-react._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-misc._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-jest._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-babel._
@@ -98,6 +101,7 @@ info: Generated testoutput/.gitignore from template node_modules/@kurlytail/gen-
 info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-npm/templates/.npmignore._
 info: Generated testoutput/.prettierrc from template node_modules/@kurlytail/gen-npm/templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template node_modules/@kurlytail/gen-npm/templates/Jenkinsfile._
+info: loading extension templates/extensions/package-json-react._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-misc._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-jest._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-babel._
