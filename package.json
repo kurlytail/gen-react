@@ -58,7 +58,7 @@
         "clean": "rimraf ./docs ./dist ./coverage test-report.xml"
     },
     "dependencies": {
-        "@kurlytail/gen-npm": "^0.0.73"
+        "@kurlytail/gen-npm": "^0.0.74"
     },
     "bin": {
         "sgen-react": "scripts/sgen-react.sh"

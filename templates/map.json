@@ -1,1 +1,5 @@
-{}
+{
+    "jsdoc.json": {
+        "template": "jsdoc.json._"
+    }
+}
