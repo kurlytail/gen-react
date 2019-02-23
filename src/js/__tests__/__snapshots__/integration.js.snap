@@ -12,14 +12,18 @@ info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-
 info: Generated testoutput/.prettierrc from template node_modules/@kurlytail/gen-npm/templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template node_modules/@kurlytail/gen-npm/templates/Jenkinsfile._
 info: loading extension templates/extensions/package-json-react._
+info: loading extension templates/extensions/package-json-jsdoc._
+info: loading extension templates/extensions/package-json-client._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-misc._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-jest._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template node_modules/@kurlytail/gen-npm/templates/package.json._
 info: Generated testoutput/README.md from template node_modules/@kurlytail/gen-npm/templates/README.md._
+info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/webpack-config._
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -41,14 +45,18 @@ info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-
 info: Generated testoutput/.prettierrc from template node_modules/@kurlytail/gen-npm/templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template node_modules/@kurlytail/gen-npm/templates/Jenkinsfile._
 info: loading extension templates/extensions/package-json-react._
+info: loading extension templates/extensions/package-json-jsdoc._
+info: loading extension templates/extensions/package-json-client._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-misc._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-jest._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template node_modules/@kurlytail/gen-npm/templates/package.json._
 info: Generated testoutput/README.md from template node_modules/@kurlytail/gen-npm/templates/README.md._
+info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/webpack-config._
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -70,14 +78,18 @@ info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-
 info: Generated testoutput/.prettierrc from template node_modules/@kurlytail/gen-npm/templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template node_modules/@kurlytail/gen-npm/templates/Jenkinsfile._
 info: loading extension templates/extensions/package-json-react._
+info: loading extension templates/extensions/package-json-jsdoc._
+info: loading extension templates/extensions/package-json-client._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-misc._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-jest._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template node_modules/@kurlytail/gen-npm/templates/package.json._
 info: Generated testoutput/README.md from template node_modules/@kurlytail/gen-npm/templates/README.md._
+info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/webpack-config._
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -102,14 +114,18 @@ info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-
 info: Generated testoutput/.prettierrc from template node_modules/@kurlytail/gen-npm/templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template node_modules/@kurlytail/gen-npm/templates/Jenkinsfile._
 info: loading extension templates/extensions/package-json-react._
+info: loading extension templates/extensions/package-json-jsdoc._
+info: loading extension templates/extensions/package-json-client._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-misc._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-jest._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template node_modules/@kurlytail/gen-npm/templates/package.json._
 info: Generated testoutput/README.md from template node_modules/@kurlytail/gen-npm/templates/README.md._
+info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/webpack-config._
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 warn: Checkout branch master-sgen-generated
 warn: Checkout branch master-sgen-generated
 warn: Nothing changed in generated files
