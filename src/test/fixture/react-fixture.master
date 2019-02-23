@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:flow="http://www.brainspeedtech.com/swarm/flow" xmlns:master="http://www.brainspeedtech.com/swarm/master" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_oiQ9IDbnEem3lv12OZ3ZJA" type="Master" element="_oiQ9IjbnEem3lv12OZ3ZJA" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_oiQ9ITbnEem3lv12OZ3ZJA"/>
+  </notation:Diagram>
+  <master:MasterDesign xmi:id="_oiQ9IjbnEem3lv12OZ3ZJA" name="react-fixture">
+    <cell xmi:type="master:MasterCell" xmi:id="_d4URAjbpEemstOQ9crAytw" input="_z4KB4TboEemstOQ9crAytw _3aWWQDboEemstOQ9crAytw" count="1" external="false" internalName="master_cell_ButtonComponent" name="ButtonComponent">
+      <designCells xmi:type="flow:Cell" href="LoginComponent.flow#_wFS0QDboEemstOQ9crAytw"/>
+      <designCells xmi:type="flow:Cell" href="LoginComponent.flow#_0VjIgDboEemstOQ9crAytw"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_d4URAzbpEemstOQ9crAytw" input="_6jhGoTboEemstOQ9crAytw" count="1" external="false" internalName="master_cell_CheckboxComponent" name="CheckboxComponent">
+      <designCells xmi:type="flow:Cell" href="LoginComponent.flow#_4f3z4DboEemstOQ9crAytw"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_mYWi8DbqEemstOQ9crAytw" input="_Chq5ETciEemsh9kXpzizFw _Chq5EzciEemsh9kXpzizFw _uw2J0jboEemstOQ9crAytw" count="1" external="false" internalName="master_cell_InputComponent" name="InputComponent">
+      <designCells xmi:type="flow:Cell" href="RegisterComponent.flow#_3gzzsDchEemsh9kXpzizFw"/>
+      <designCells xmi:type="flow:Cell" href="RegisterComponent.flow#_AjswgDciEemsh9kXpzizFw"/>
+      <designCells xmi:type="flow:Cell" href="LoginComponent.flow#_oGB3oDboEemstOQ9crAytw"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_uJNFkDbpEemstOQ9crAytw" input="_uJNFkTbpEemstOQ9crAytw" count="1" external="false" internalName="master_cell_LinkComponent" name="LinkComponent">
+      <designCells xmi:type="flow:Cell" href="LoginComponent.flow#_qOMBgDbpEemstOQ9crAytw"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_mJy0cDboEemstOQ9crAytw" output="_uw2J0jboEemstOQ9crAytw _z4KB4TboEemstOQ9crAytw _3aWWQDboEemstOQ9crAytw _6jhGoTboEemstOQ9crAytw _uJNFkTbpEemstOQ9crAytw" count="1" external="false" internalName="master_cell_LoginComponent" name="LoginComponent">
+      <designCells xmi:type="flow:Cell" href="LoginComponent.flow#_k6QfMDboEemstOQ9crAytw"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_d4URATbpEemstOQ9crAytw" input="_uw2J0zboEemstOQ9crAytw _Chq5EjciEemsh9kXpzizFw" count="1" external="false" internalName="master_cell_PasswordComponent" name="PasswordComponent">
+      <designCells xmi:type="flow:Cell" href="RegisterComponent.flow#_7dH4QDchEemsh9kXpzizFw"/>
+      <designCells xmi:type="flow:Cell" href="RegisterComponent.flow#_9n6U0DchEemsh9kXpzizFw"/>
+      <designCells xmi:type="flow:Cell" href="LoginComponent.flow#_rqakYDboEemstOQ9crAytw"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_Chq5EDciEemsh9kXpzizFw" output="_Chq5ETciEemsh9kXpzizFw _uw2J0zboEemstOQ9crAytw _Chq5EjciEemsh9kXpzizFw _Chq5EzciEemsh9kXpzizFw" count="1" external="false" internalName="master_cell_RegisterComponent" name="RegisterComponent">
+      <designCells xmi:type="flow:Cell" href="RegisterComponent.flow#_2sGZQDchEemsh9kXpzizFw"/>
+    </cell>
+    <tube xmi:type="master:MasterTube" xmi:id="_Chq5EjciEemsh9kXpzizFw" from="_Chq5EDciEemsh9kXpzizFw" internalName="master_tube_ConfirmPassword" name="ConfirmPassword" to="_d4URATbpEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="RegisterComponent.flow#_-_UMoDchEemsh9kXpzizFw"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_Chq5EzciEemsh9kXpzizFw" from="_Chq5EDciEemsh9kXpzizFw" internalName="master_tube_Email" name="Email" to="_mYWi8DbqEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="RegisterComponent.flow#_BsQ7EDciEemsh9kXpzizFw"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_Chq5ETciEemsh9kXpzizFw" from="_Chq5EDciEemsh9kXpzizFw" internalName="master_tube_Name" name="Name" to="_mYWi8DbqEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="RegisterComponent.flow#_5GTx4DchEemsh9kXpzizFw"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_uJNFkTbpEemstOQ9crAytw" from="_mJy0cDboEemstOQ9crAytw" internalName="master_tube_NeedHelp" name="NeedHelp" to="_uJNFkDbpEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="LoginComponent.flow#_s4Xv0DbpEemstOQ9crAytw"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_uw2J0zboEemstOQ9crAytw" from="_Chq5EDciEemsh9kXpzizFw" internalName="master_tube_Password" name="Password" to="_d4URATbpEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="RegisterComponent.flow#_88Hl0DchEemsh9kXpzizFw"/>
+      <designTubes xmi:type="flow:Tube" href="LoginComponent.flow#_s02-QDboEemstOQ9crAytw"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_3aWWQDboEemstOQ9crAytw" from="_mJy0cDboEemstOQ9crAytw" internalName="master_tube_Register" name="Register" to="_d4URAjbpEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="LoginComponent.flow#_1ph44DboEemstOQ9crAytw"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_6jhGoTboEemstOQ9crAytw" from="_mJy0cDboEemstOQ9crAytw" internalName="master_tube_RememberMe" name="RememberMe" to="_d4URAzbpEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="LoginComponent.flow#_5dvKUDboEemstOQ9crAytw"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_z4KB4TboEemstOQ9crAytw" from="_mJy0cDboEemstOQ9crAytw" internalName="master_tube_SignIn" name="SignIn" to="_d4URAjbpEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="LoginComponent.flow#_yErSEDboEemstOQ9crAytw"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_uw2J0jboEemstOQ9crAytw" from="_mJy0cDboEemstOQ9crAytw" internalName="master_tube_UserName" name="UserName" to="_mYWi8DbqEemstOQ9crAytw">
+      <designTubes xmi:type="flow:Tube" href="LoginComponent.flow#_pMDEgDboEemstOQ9crAytw"/>
+    </tube>
+  </master:MasterDesign>
+</xmi:XMI>
