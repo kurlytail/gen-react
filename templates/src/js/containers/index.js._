@@ -1,5 +1,5 @@
 <%
-design.MasterCell.filter(cell => cell.name.endsWith('Component')).forEach(cell => {
+design.MasterCell.filter(cell => cell.name.endsWith('Container')).forEach(cell => {
     const className = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
 import <%=className%> from './<%=className%>';
@@ -9,7 +9,7 @@ import <%=className%> from './<%=className%>';
 
 export {
 <%=
-design.MasterCell.filter(cell => cell.name.endsWith('Component')).map(cell => {
+design.MasterCell.filter(cell => cell.name.endsWith('Container')).map(cell => {
     const className = lodash.upperFirst(lodash.camelCase(cell.name));
     return className;
 }).join(',')

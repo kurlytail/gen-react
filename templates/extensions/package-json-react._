@@ -10,5 +10,6 @@
         "react-select": "^1.1.0"
 <%} else if (labels.includes('devDependencies')) {%>
         "babel-preset-react": "^6.24.1",
-        "react-test-renderer": "^16.5.2"
+        "react-test-renderer": "^16.5.2",
+        "eslint-plugin-react": "7.11.1"
 <%}%>

@@ -2,8 +2,8 @@
     "jsdoc.json": {
         "template": "jsdoc.json._"
     },
-    "src/js/index.js": {
-        "template": "src/js/index.js._"
+    "src/js/index.jsx": {
+        "template": "src/js/index.jsx._"
     },
 <%
 design.MasterCell.filter(cell => cell.name.endsWith('Component')).forEach(cell => {
@@ -22,6 +22,24 @@ design.MasterCell.filter(cell => cell.name.endsWith('Component')).forEach(cell =
 %>
     "src/js/components/index.js": {
         "template": "src/js/components/index.js._"
+    },
+<%
+design.MasterCell.filter(cell => cell.name.endsWith('Container')).forEach(cell => {
+    const className = lodash.upperFirst(lodash.camelCase(cell.name));
+%>
+    "src/js/containers/<%=className%>.jsx": {
+        "template": "src/js/containers/container.jsx._",
+        "context": "<%=cell.name%>"
+    },
+    "src/js/containers/__tests__/<%=className%>.jsx": {
+        "template": "src/js/containers/__tests__/container.jsx._",
+        "context": "<%=cell.name%>"
+    },
+<%
+});
+%>
+    "src/js/containers/index.js": {
+        "template": "src/js/containers/index.js._"
     },
     "src/js/html.jst": {
         "template": "src/js/html.jst._"

@@ -1,0 +1,18 @@
+<%if(labels.includes('extends')) {%>
+'plugin:react/recommended'
+<%} else if(labels.includes('plugins')) {%>
+'react'
+<%} else if(labels.includes('settings-import-babel-module-extensions')) {%>
+'.jsx'
+<%} else if(labels.includes('settings')) {%>
+react: {
+    createClass: 'createReactClass',
+    pragma: 'React',
+    version: 15.4,
+    flowVersion: '0.53'
+}
+<%} else if(labels.includes('globals')) {%>
+React: true
+<%} else if(labels.includes('parserOptions')) {%>
+ecmaFeatures: { jsx: true }
+<%}%>

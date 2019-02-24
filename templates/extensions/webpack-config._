@@ -1,53 +1,77 @@
 <%if(labels.includes('target')) {%>
 'web'
 <%} else if(labels.includes('module-rules')) {%>
-            {
-                test: /\.css$/,
-                loader: 'style-loader'
-            },
-            {
-                test: /\.css$/,
-                loader: 'css-loader',
-                query: {
-                    modules: true,
-                    localIdentName: '[local]'
-                },
-                include: path.join(__dirname, 'src')
-            },
-            {
-                test: /\.css$/,
-                loader: 'css-loader',
-                include: path.join(__dirname, 'node_modules')
-            },
-            {
-                test: /\.less$/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'less-loader'
-                    }
-                ]
-            },
-            {
-                test: /\.(png|svg|jpg|gif)$/,
-                loader: ['file-loader']
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                loader: ['file-loader']
+{
+    test: /\.css$/,
+    loader: 'style-loader'
+},
+{
+    test: /\.css$/,
+    loader: 'css-loader',
+    query: {
+        modules: true,
+        localIdentName: '[local]'
+    },
+    include: path.join(__dirname, 'src')
+},
+{
+    test: /\.css$/,
+    loader: 'css-loader',
+    include: path.join(__dirname, 'node_modules')
+},
+{
+    test: /\.less$/,
+    use: [
+        {
+            loader: 'style-loader'
+        },
+        {
+            loader: 'css-loader'
+        },
+        {
+            loader: 'less-loader'
+        }
+    ]
+},
+{
+    test: /\.(png|svg|jpg|gif)$/,
+    loader: ['file-loader']
+},
+{
+    test: /\.(woff|woff2|eot|ttf|otf)$/,
+    loader: ['file-loader']
+},
+{
+    exclude: /node_modules/,
+    test: /\.jsx$/,
+    loader: 'babel-loader'
+},
+{
+    test: /\.jsx$/,
+    enforce: 'pre',
+    use: [
+        'source-map-loader',
+        {
+            loader: 'eslint-loader',
+            options: {
+                emitWarning: true
             }
+        }
+    ]
+}
 <%} else if(labels.includes('imports')) {%>
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 <%} else if(labels.includes('plugins')) {%>
-        new HtmlWebpackPlugin({
-            title: '<%=design.MasterDesign[0].name%>',
-            filename: 'index.html',
-            template: './src/js/html.jst',
-            hash: true
-        })
+new HtmlWebpackPlugin({
+    title: '<%=design.MasterDesign[0].name%>',
+    filename: 'index.html',
+    template: './src/js/html.jst',
+    hash: true
+})
+<%} else if(labels.includes('entry')) {%>
+{
+    app: './src/js/index.jsx'
+}
+<%} else if(labels.includes('resolve-extensions')) {%>
+'.jsx'
 <%}%>

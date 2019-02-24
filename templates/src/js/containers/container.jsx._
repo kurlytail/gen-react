@@ -9,12 +9,11 @@ const importContainers = _.union(_.pluck(cell.output, 'to')
     .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
 %>
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-<%if (importContainers.length !== 0) {%>
-import {<%=importContainers.join(',')%>} from '../containers';
+<%if (importComponents.length !== 0) {%>
+import {<%=importComponents.join(',')%>} from '../components';
 <%}%>
 <%
-importComponents.forEach(name => {
+importContainers.forEach(name => {
 %>
 import <%=name%> from './<%=name%>';
 <%
@@ -23,7 +22,7 @@ import <%=name%> from './<%=name%>';
 
 class <%=className%> extends Component {
     render() {
-        return <label>{this.props.label}
+        return <div>
 <%
 cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
     .forEach(tube => {
@@ -34,12 +33,8 @@ cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.en
 <%
 });
 %>
-        </label>;
+        </div>;
     }
 }
-
-<%=className%>.propTypes = {
-    label: PropTypes.string
-};
 
 export default <%=className%>;
