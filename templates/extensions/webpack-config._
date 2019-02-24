@@ -1,4 +1,6 @@
-<%if(labels.includes('module-rules')) {%>
+<%if(labels.includes('target')) {%>
+'web'
+<%} else if(labels.includes('module-rules')) {%>
             {
                 test: /\.css$/,
                 loader: 'style-loader'
