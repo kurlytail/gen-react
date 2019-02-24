@@ -1,5 +1,11 @@
 {
     "jsdoc.json": {
         "template": "jsdoc.json._"
+    },
+    "src/js/index.js": {
+        "template": "src/js/index.js._"
+    },
+    "src/js/html.jst": {
+        "template": "src/js/html.jst._"
     }
 }

@@ -27,5 +27,7 @@ describe('# integration test', () => {
         expect(output).toMatchSnapshot();
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
+        output = execSync('npm run build', { cwd: 'testoutput' }).toString();
+        output = execSync('npm test', { cwd: 'testoutput' }).toString();
     });
 });
