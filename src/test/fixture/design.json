@@ -1,55 +1,40 @@
 {
-  "_1fh4cDchEemsh9kXpzizFw": {
-    "clazz": "Flow",
-    "name": "RegisterComponent",
-    "cell": [
-      "_2sGZQDchEemsh9kXpzizFw",
-      "_3gzzsDchEemsh9kXpzizFw",
-      "_7dH4QDchEemsh9kXpzizFw",
-      "_9n6U0DchEemsh9kXpzizFw",
-      "_AjswgDciEemsh9kXpzizFw"
-    ],
-    "tube": [
-      "_5GTx4DchEemsh9kXpzizFw",
-      "_88Hl0DchEemsh9kXpzizFw",
-      "_-_UMoDchEemsh9kXpzizFw",
-      "_BsQ7EDciEemsh9kXpzizFw"
+  "_yCIbcDhIEemsh9kXpzizFw": {
+    "clazz": "Tube",
+    "name": "GenericList",
+    "descriptor": [],
+    "from": "_vhV5sDhIEemsh9kXpzizFw",
+    "to": "_w6EAIDhIEemsh9kXpzizFw"
+  },
+  "_O5TQgDhIEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "MainContainer",
+    "input": [],
+    "output": [
+      "_R57v8DhIEemsh9kXpzizFw",
+      "_XRdOQDhIEemsh9kXpzizFw",
+      "_gtH3cDhIEemsh9kXpzizFw",
+      "_7ZbiADhIEemsh9kXpzizFw"
     ]
   },
-  "master_cell_PasswordComponent": {
+  "master_cell_MainContainer": {
     "clazz": "MasterCell",
     "count": 1,
     "external": false,
-    "internalName": "master_cell_PasswordComponent",
-    "name": "PasswordComponent",
-    "pinned": false,
-    "input": [
-      "master_tube_Password",
-      "master_tube_ConfirmPassword"
-    ],
-    "output": [],
-    "designCells": [
-      "_7dH4QDchEemsh9kXpzizFw",
-      "_9n6U0DchEemsh9kXpzizFw",
-      "_rqakYDboEemstOQ9crAytw"
-    ]
-  },
-  "master_cell_RegisterComponent": {
-    "clazz": "MasterCell",
-    "count": 1,
-    "external": false,
-    "internalName": "master_cell_RegisterComponent",
-    "name": "RegisterComponent",
+    "internalName": "master_cell_MainContainer",
+    "name": "MainContainer",
     "pinned": false,
     "input": [],
     "output": [
-      "master_tube_Name",
-      "master_tube_Password",
-      "master_tube_ConfirmPassword",
-      "master_tube_Email"
+      "master_tube_Login",
+      "master_tube_Register",
+      "master_tube_Logout",
+      "master_tube_Application"
     ],
     "designCells": [
-      "_2sGZQDchEemsh9kXpzizFw"
+      "_O5TQgDhIEemsh9kXpzizFw"
     ]
   },
   "master_cell_InputComponent": {
@@ -116,6 +101,327 @@
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_wFS0QDboEemstOQ9crAytw"
   },
+  "_uqaRsDhIEemsh9kXpzizFw": {
+    "clazz": "Flow",
+    "name": "AppContainer",
+    "cell": [
+      "_vhV5sDhIEemsh9kXpzizFw",
+      "_w6EAIDhIEemsh9kXpzizFw"
+    ],
+    "tube": [
+      "_yCIbcDhIEemsh9kXpzizFw"
+    ]
+  },
+  "_88Hl0DchEemsh9kXpzizFw": {
+    "clazz": "Tube",
+    "name": "Password",
+    "descriptor": [],
+    "from": "_2sGZQDchEemsh9kXpzizFw",
+    "to": "_7dH4QDchEemsh9kXpzizFw"
+  },
+  "master_tube_GenericList": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_GenericList",
+    "name": "GenericList",
+    "designTubes": [
+      "_yCIbcDhIEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_AppContainer",
+    "to": "master_cell_ListComponent"
+  },
+  "_ofbEgDbnEem3lv12OZ3ZJA": {
+    "clazz": "Layer",
+    "name": "swarm",
+    "constraint": []
+  },
+  "_AjswgDciEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "InputComponent",
+    "input": [
+      "_BsQ7EDciEemsh9kXpzizFw"
+    ],
+    "output": []
+  },
+  "master_tube_Password": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_Password",
+    "name": "Password",
+    "designTubes": [
+      "_88Hl0DchEemsh9kXpzizFw",
+      "_s02-QDboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_RegisterComponent",
+    "to": "master_cell_PasswordComponent"
+  },
+  "master_tube_Login": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_Login",
+    "name": "Login",
+    "designTubes": [
+      "_R57v8DhIEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_LoginComponent"
+  },
+  "master_tube_NeedHelp": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_NeedHelp",
+    "name": "NeedHelp",
+    "designTubes": [
+      "_s4Xv0DbpEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_LinkComponent"
+  },
+  "_5GTx4DchEemsh9kXpzizFw": {
+    "clazz": "Tube",
+    "name": "Name",
+    "descriptor": [],
+    "from": "_2sGZQDchEemsh9kXpzizFw",
+    "to": "_3gzzsDchEemsh9kXpzizFw"
+  },
+  "_3gzzsDchEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "InputComponent",
+    "input": [
+      "_5GTx4DchEemsh9kXpzizFw"
+    ],
+    "output": []
+  },
+  "_9n6U0DchEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "PasswordComponent",
+    "input": [
+      "_-_UMoDchEemsh9kXpzizFw"
+    ],
+    "output": []
+  },
+  "master_tube_UserName": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_UserName",
+    "name": "UserName",
+    "designTubes": [
+      "_pMDEgDboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_InputComponent"
+  },
+  "_4f3z4DboEemstOQ9crAytw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "CheckboxComponent",
+    "input": [
+      "_5dvKUDboEemstOQ9crAytw"
+    ],
+    "output": []
+  },
+  "_pMDEgDboEemstOQ9crAytw": {
+    "clazz": "Tube",
+    "name": "UserName",
+    "descriptor": [],
+    "from": "_k6QfMDboEemstOQ9crAytw",
+    "to": "_oGB3oDboEemstOQ9crAytw"
+  },
+  "_vhV5sDhIEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "AppContainer",
+    "input": [],
+    "output": [
+      "_yCIbcDhIEemsh9kXpzizFw"
+    ]
+  },
+  "_w6EAIDhIEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "ListComponent",
+    "input": [
+      "_yCIbcDhIEemsh9kXpzizFw"
+    ],
+    "output": []
+  },
+  "master_cell_CheckboxComponent": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_CheckboxComponent",
+    "name": "CheckboxComponent",
+    "pinned": false,
+    "input": [
+      "master_tube_RememberMe"
+    ],
+    "output": [],
+    "designCells": [
+      "_4f3z4DboEemstOQ9crAytw"
+    ]
+  },
+  "master_tube_Application": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_Application",
+    "name": "Application",
+    "designTubes": [
+      "_7ZbiADhIEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_AppContainer"
+  },
+  "master_tube_Logout": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_Logout",
+    "name": "Logout",
+    "designTubes": [
+      "_gtH3cDhIEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_LogoutComponent"
+  },
+  "_2sGZQDchEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "RegisterComponent",
+    "input": [],
+    "output": [
+      "_5GTx4DchEemsh9kXpzizFw",
+      "_88Hl0DchEemsh9kXpzizFw",
+      "_-_UMoDchEemsh9kXpzizFw",
+      "_BsQ7EDciEemsh9kXpzizFw"
+    ]
+  },
+  "master_tube_Register": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_Register",
+    "name": "Register",
+    "designTubes": [
+      "_XRdOQDhIEemsh9kXpzizFw",
+      "_1ph44DboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_RegisterComponent"
+  },
+  "_R57v8DhIEemsh9kXpzizFw": {
+    "clazz": "Tube",
+    "name": "Login",
+    "descriptor": [],
+    "from": "_O5TQgDhIEemsh9kXpzizFw",
+    "to": "_QqbP4DhIEemsh9kXpzizFw"
+  },
+  "master_tube_RememberMe": {
+    "clazz": "MasterTube",
+    "internalName": "master_tube_RememberMe",
+    "name": "RememberMe",
+    "designTubes": [
+      "_5dvKUDboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_CheckboxComponent"
+  },
+  "_dw1sgDhIEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "LogoutComponent",
+    "input": [
+      "_gtH3cDhIEemsh9kXpzizFw"
+    ],
+    "output": []
+  },
+  "_BsQ7EDciEemsh9kXpzizFw": {
+    "clazz": "Tube",
+    "name": "Email",
+    "descriptor": [],
+    "from": "_2sGZQDchEemsh9kXpzizFw",
+    "to": "_AjswgDciEemsh9kXpzizFw"
+  },
+  "_1fh4cDchEemsh9kXpzizFw": {
+    "clazz": "Flow",
+    "name": "RegisterComponent",
+    "cell": [
+      "_2sGZQDchEemsh9kXpzizFw",
+      "_3gzzsDchEemsh9kXpzizFw",
+      "_7dH4QDchEemsh9kXpzizFw",
+      "_9n6U0DchEemsh9kXpzizFw",
+      "_AjswgDciEemsh9kXpzizFw"
+    ],
+    "tube": [
+      "_5GTx4DchEemsh9kXpzizFw",
+      "_88Hl0DchEemsh9kXpzizFw",
+      "_-_UMoDchEemsh9kXpzizFw",
+      "_BsQ7EDciEemsh9kXpzizFw"
+    ]
+  },
+  "master_cell_PasswordComponent": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_PasswordComponent",
+    "name": "PasswordComponent",
+    "pinned": false,
+    "input": [
+      "master_tube_Password",
+      "master_tube_ConfirmPassword"
+    ],
+    "output": [],
+    "designCells": [
+      "_7dH4QDchEemsh9kXpzizFw",
+      "_9n6U0DchEemsh9kXpzizFw",
+      "_rqakYDboEemstOQ9crAytw"
+    ]
+  },
+  "master_cell_RegisterComponent": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_RegisterComponent",
+    "name": "RegisterComponent",
+    "pinned": false,
+    "input": [
+      "master_tube_Register"
+    ],
+    "output": [
+      "master_tube_Name",
+      "master_tube_Password",
+      "master_tube_ConfirmPassword",
+      "master_tube_Email"
+    ],
+    "designCells": [
+      "_WUf2wDhIEemsh9kXpzizFw",
+      "_2sGZQDchEemsh9kXpzizFw"
+    ]
+  },
+  "_MS09gDhIEemsh9kXpzizFw": {
+    "clazz": "Flow",
+    "name": "MainContainer",
+    "cell": [
+      "_O5TQgDhIEemsh9kXpzizFw",
+      "_QqbP4DhIEemsh9kXpzizFw",
+      "_WUf2wDhIEemsh9kXpzizFw",
+      "_dw1sgDhIEemsh9kXpzizFw",
+      "_6KWfwDhIEemsh9kXpzizFw"
+    ],
+    "tube": [
+      "_R57v8DhIEemsh9kXpzizFw",
+      "_XRdOQDhIEemsh9kXpzizFw",
+      "_gtH3cDhIEemsh9kXpzizFw",
+      "_7ZbiADhIEemsh9kXpzizFw"
+    ]
+  },
+  "_gtH3cDhIEemsh9kXpzizFw": {
+    "clazz": "Tube",
+    "name": "Logout",
+    "descriptor": [],
+    "from": "_O5TQgDhIEemsh9kXpzizFw",
+    "to": "_dw1sgDhIEemsh9kXpzizFw"
+  },
   "_k6QfMDboEemstOQ9crAytw": {
     "clazz": "Cell",
     "count": 1,
@@ -129,6 +435,24 @@
       "_1ph44DboEemstOQ9crAytw",
       "_5dvKUDboEemstOQ9crAytw",
       "_s4Xv0DbpEemstOQ9crAytw"
+    ]
+  },
+  "master_cell_AppContainer": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_AppContainer",
+    "name": "AppContainer",
+    "pinned": false,
+    "input": [
+      "master_tube_Application"
+    ],
+    "output": [
+      "master_tube_GenericList"
+    ],
+    "designCells": [
+      "_6KWfwDhIEemsh9kXpzizFw",
+      "_vhV5sDhIEemsh9kXpzizFw"
     ]
   },
   "_s4Xv0DbpEemstOQ9crAytw": {
@@ -148,12 +472,12 @@
     "from": "master_cell_RegisterComponent",
     "to": "master_cell_PasswordComponent"
   },
-  "_88Hl0DchEemsh9kXpzizFw": {
+  "_XRdOQDhIEemsh9kXpzizFw": {
     "clazz": "Tube",
-    "name": "Password",
+    "name": "Register",
     "descriptor": [],
-    "from": "_2sGZQDchEemsh9kXpzizFw",
-    "to": "_7dH4QDchEemsh9kXpzizFw"
+    "from": "_O5TQgDhIEemsh9kXpzizFw",
+    "to": "_WUf2wDhIEemsh9kXpzizFw"
   },
   "master_cell_LoginComponent": {
     "clazz": "MasterCell",
@@ -162,17 +486,29 @@
     "internalName": "master_cell_LoginComponent",
     "name": "LoginComponent",
     "pinned": false,
-    "input": [],
+    "input": [
+      "master_tube_Login"
+    ],
     "output": [
       "master_tube_UserName",
       "master_tube_SignIn",
-      "master_tube_Register",
       "master_tube_RememberMe",
       "master_tube_NeedHelp"
     ],
     "designCells": [
+      "_QqbP4DhIEemsh9kXpzizFw",
       "_k6QfMDboEemstOQ9crAytw"
     ]
+  },
+  "_QqbP4DhIEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "LoginComponent",
+    "input": [
+      "_R57v8DhIEemsh9kXpzizFw"
+    ],
+    "output": []
   },
   "_0VjIgDboEemstOQ9crAytw": {
     "clazz": "Cell",
@@ -194,11 +530,6 @@
     "from": "master_cell_LoginComponent",
     "to": "master_cell_ButtonComponent"
   },
-  "_ofbEgDbnEem3lv12OZ3ZJA": {
-    "clazz": "Layer",
-    "name": "swarm",
-    "constraint": []
-  },
   "_wFS0QDboEemstOQ9crAytw": {
     "clazz": "Cell",
     "count": 1,
@@ -209,13 +540,13 @@
     ],
     "output": []
   },
-  "_AjswgDciEemsh9kXpzizFw": {
+  "_WUf2wDhIEemsh9kXpzizFw": {
     "clazz": "Cell",
     "count": 1,
     "external": false,
-    "name": "InputComponent",
+    "name": "RegisterComponent",
     "input": [
-      "_BsQ7EDciEemsh9kXpzizFw"
+      "_XRdOQDhIEemsh9kXpzizFw"
     ],
     "output": []
   },
@@ -261,27 +592,6 @@
     "from": "master_cell_RegisterComponent",
     "to": "master_cell_InputComponent"
   },
-  "master_tube_Password": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_Password",
-    "name": "Password",
-    "designTubes": [
-      "_88Hl0DchEemsh9kXpzizFw",
-      "_s02-QDboEemstOQ9crAytw"
-    ],
-    "from": "master_cell_RegisterComponent",
-    "to": "master_cell_PasswordComponent"
-  },
-  "master_tube_NeedHelp": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_NeedHelp",
-    "name": "NeedHelp",
-    "designTubes": [
-      "_s4Xv0DbpEemstOQ9crAytw"
-    ],
-    "from": "master_cell_LoginComponent",
-    "to": "master_cell_LinkComponent"
-  },
   "_s02-QDboEemstOQ9crAytw": {
     "clazz": "Tube",
     "name": "Password",
@@ -289,12 +599,15 @@
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_rqakYDboEemstOQ9crAytw"
   },
-  "_5GTx4DchEemsh9kXpzizFw": {
-    "clazz": "Tube",
-    "name": "Name",
-    "descriptor": [],
-    "from": "_2sGZQDchEemsh9kXpzizFw",
-    "to": "_3gzzsDchEemsh9kXpzizFw"
+  "_6KWfwDhIEemsh9kXpzizFw": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "AppContainer",
+    "input": [
+      "_7ZbiADhIEemsh9kXpzizFw"
+    ],
+    "output": []
   },
   "_qOMBgDbpEemstOQ9crAytw": {
     "clazz": "Cell",
@@ -306,45 +619,12 @@
     ],
     "output": []
   },
-  "_3gzzsDchEemsh9kXpzizFw": {
-    "clazz": "Cell",
-    "count": 1,
-    "external": false,
-    "name": "InputComponent",
-    "input": [
-      "_5GTx4DchEemsh9kXpzizFw"
-    ],
-    "output": []
-  },
-  "_9n6U0DchEemsh9kXpzizFw": {
-    "clazz": "Cell",
-    "count": 1,
-    "external": false,
-    "name": "PasswordComponent",
-    "input": [
-      "_-_UMoDchEemsh9kXpzizFw"
-    ],
-    "output": []
-  },
-  "master_tube_UserName": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_UserName",
-    "name": "UserName",
-    "designTubes": [
-      "_pMDEgDboEemstOQ9crAytw"
-    ],
-    "from": "master_cell_LoginComponent",
-    "to": "master_cell_InputComponent"
-  },
-  "_4f3z4DboEemstOQ9crAytw": {
-    "clazz": "Cell",
-    "count": 1,
-    "external": false,
-    "name": "CheckboxComponent",
-    "input": [
-      "_5dvKUDboEemstOQ9crAytw"
-    ],
-    "output": []
+  "_7ZbiADhIEemsh9kXpzizFw": {
+    "clazz": "Tube",
+    "name": "Application",
+    "descriptor": [],
+    "from": "_O5TQgDhIEemsh9kXpzizFw",
+    "to": "_6KWfwDhIEemsh9kXpzizFw"
   },
   "_1ph44DboEemstOQ9crAytw": {
     "clazz": "Tube",
@@ -353,39 +633,34 @@
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_0VjIgDboEemstOQ9crAytw"
   },
-  "_pMDEgDboEemstOQ9crAytw": {
-    "clazz": "Tube",
-    "name": "UserName",
-    "descriptor": [],
-    "from": "_k6QfMDboEemstOQ9crAytw",
-    "to": "_oGB3oDboEemstOQ9crAytw"
-  },
-  "master_cell_CheckboxComponent": {
+  "master_cell_ListComponent": {
     "clazz": "MasterCell",
     "count": 1,
     "external": false,
-    "internalName": "master_cell_CheckboxComponent",
-    "name": "CheckboxComponent",
+    "internalName": "master_cell_ListComponent",
+    "name": "ListComponent",
     "pinned": false,
     "input": [
-      "master_tube_RememberMe"
+      "master_tube_GenericList"
     ],
     "output": [],
     "designCells": [
-      "_4f3z4DboEemstOQ9crAytw"
+      "_w6EAIDhIEemsh9kXpzizFw"
     ]
   },
-  "_2sGZQDchEemsh9kXpzizFw": {
-    "clazz": "Cell",
+  "master_cell_LogoutComponent": {
+    "clazz": "MasterCell",
     "count": 1,
     "external": false,
-    "name": "RegisterComponent",
-    "input": [],
-    "output": [
-      "_5GTx4DchEemsh9kXpzizFw",
-      "_88Hl0DchEemsh9kXpzizFw",
-      "_-_UMoDchEemsh9kXpzizFw",
-      "_BsQ7EDciEemsh9kXpzizFw"
+    "internalName": "master_cell_LogoutComponent",
+    "name": "LogoutComponent",
+    "pinned": false,
+    "input": [
+      "master_tube_Logout"
+    ],
+    "output": [],
+    "designCells": [
+      "_dw1sgDhIEemsh9kXpzizFw"
     ]
   },
   "_oGB3oDboEemstOQ9crAytw": {
@@ -408,31 +683,29 @@
     "from": "master_cell_RegisterComponent",
     "to": "master_cell_InputComponent"
   },
-  "master_tube_Register": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_Register",
-    "name": "Register",
-    "designTubes": [
-      "_1ph44DboEemstOQ9crAytw"
-    ],
-    "from": "master_cell_LoginComponent",
-    "to": "master_cell_ButtonComponent"
-  },
   "_oiQ9IjbnEem3lv12OZ3ZJA": {
     "clazz": "MasterDesign",
     "name": "react-fixture",
     "cell": [
+      "master_cell_AppContainer",
       "master_cell_ButtonComponent",
       "master_cell_CheckboxComponent",
       "master_cell_InputComponent",
       "master_cell_LinkComponent",
+      "master_cell_ListComponent",
       "master_cell_LoginComponent",
+      "master_cell_LogoutComponent",
+      "master_cell_MainContainer",
       "master_cell_PasswordComponent",
       "master_cell_RegisterComponent"
     ],
     "tube": [
+      "master_tube_Application",
       "master_tube_ConfirmPassword",
       "master_tube_Email",
+      "master_tube_GenericList",
+      "master_tube_Login",
+      "master_tube_Logout",
       "master_tube_Name",
       "master_tube_NeedHelp",
       "master_tube_Password",
@@ -450,30 +723,12 @@
     "name": "ButtonComponent",
     "pinned": false,
     "input": [
-      "master_tube_SignIn",
-      "master_tube_Register"
+      "master_tube_SignIn"
     ],
     "output": [],
     "designCells": [
       "_wFS0QDboEemstOQ9crAytw",
       "_0VjIgDboEemstOQ9crAytw"
     ]
-  },
-  "master_tube_RememberMe": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_RememberMe",
-    "name": "RememberMe",
-    "designTubes": [
-      "_5dvKUDboEemstOQ9crAytw"
-    ],
-    "from": "master_cell_LoginComponent",
-    "to": "master_cell_CheckboxComponent"
-  },
-  "_BsQ7EDciEemsh9kXpzizFw": {
-    "clazz": "Tube",
-    "name": "Email",
-    "descriptor": [],
-    "from": "_2sGZQDchEemsh9kXpzizFw",
-    "to": "_AjswgDciEemsh9kXpzizFw"
   }
 }
