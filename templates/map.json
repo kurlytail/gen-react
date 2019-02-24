@@ -5,6 +5,24 @@
     "src/js/index.js": {
         "template": "src/js/index.js._"
     },
+<%
+design.MasterCell.filter(cell => cell.name.endsWith('Component')).forEach(cell => {
+    const className = lodash.upperFirst(lodash.camelCase(cell.name));
+%>
+    "src/js/components/<%=className%>.jsx": {
+        "template": "src/js/components/component.jsx._",
+        "context": "<%=cell.name%>"
+    },
+    "src/js/components/__tests__/<%=className%>.jsx": {
+        "template": "src/js/components/__tests__/component.jsx._",
+        "context": "<%=cell.name%>"
+    },
+<%
+});
+%>
+    "src/js/components/index.js": {
+        "template": "src/js/components/index.js._"
+    },
     "src/js/html.jst": {
         "template": "src/js/html.jst._"
     }

@@ -6,6 +6,9 @@ info: loading map templates/map.json
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.editorconfig from template node_modules/@kurlytail/gen-npm/templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template node_modules/@kurlytail/gen-npm/templates/.eslintignore._
+info: loading extension templates/extensions/babelrc._
+info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/babelrc._
+info: Generated testoutput/.babelrc from template node_modules/@kurlytail/gen-npm/templates/.babelrc._
 info: Generated testoutput/.eslintrc.js from template node_modules/@kurlytail/gen-npm/templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template node_modules/@kurlytail/gen-npm/templates/.gitignore._
 info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-npm/templates/.npmignore._
@@ -26,6 +29,21 @@ info: Generated testoutput/webpack.config.js from template node_modules/@kurlyta
 info: Generated testoutput/src/js/index.js from template templates/src/js/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
+info: Generated testoutput/src/js/components/PasswordComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/RegisterComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/RegisterComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/InputComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/InputComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/LoginComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/LoginComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/CheckboxComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/CheckboxComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/ButtonComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/ButtonComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
@@ -42,6 +60,9 @@ info: loading map templates/map.json
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.editorconfig from template node_modules/@kurlytail/gen-npm/templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template node_modules/@kurlytail/gen-npm/templates/.eslintignore._
+info: loading extension templates/extensions/babelrc._
+info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/babelrc._
+info: Generated testoutput/.babelrc from template node_modules/@kurlytail/gen-npm/templates/.babelrc._
 info: Generated testoutput/.eslintrc.js from template node_modules/@kurlytail/gen-npm/templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template node_modules/@kurlytail/gen-npm/templates/.gitignore._
 info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-npm/templates/.npmignore._
@@ -62,6 +83,21 @@ info: Generated testoutput/webpack.config.js from template node_modules/@kurlyta
 info: Generated testoutput/src/js/index.js from template templates/src/js/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
+info: Generated testoutput/src/js/components/PasswordComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/RegisterComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/RegisterComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/InputComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/InputComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/LoginComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/LoginComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/CheckboxComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/CheckboxComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/ButtonComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/ButtonComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
@@ -78,6 +114,9 @@ info: loading map templates/map.json
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.editorconfig from template node_modules/@kurlytail/gen-npm/templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template node_modules/@kurlytail/gen-npm/templates/.eslintignore._
+info: loading extension templates/extensions/babelrc._
+info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/babelrc._
+info: Generated testoutput/.babelrc from template node_modules/@kurlytail/gen-npm/templates/.babelrc._
 info: Generated testoutput/.eslintrc.js from template node_modules/@kurlytail/gen-npm/templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template node_modules/@kurlytail/gen-npm/templates/.gitignore._
 info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-npm/templates/.npmignore._
@@ -98,6 +137,21 @@ info: Generated testoutput/webpack.config.js from template node_modules/@kurlyta
 info: Generated testoutput/src/js/index.js from template templates/src/js/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
+info: Generated testoutput/src/js/components/PasswordComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/RegisterComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/RegisterComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/InputComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/InputComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/LoginComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/LoginComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/CheckboxComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/CheckboxComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/ButtonComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/ButtonComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
@@ -117,6 +171,9 @@ info: Attempting to use branch master-sgen-generated
 warn: Checkout branch master-sgen-generated
 info: Generated testoutput/.editorconfig from template node_modules/@kurlytail/gen-npm/templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template node_modules/@kurlytail/gen-npm/templates/.eslintignore._
+info: loading extension templates/extensions/babelrc._
+info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/babelrc._
+info: Generated testoutput/.babelrc from template node_modules/@kurlytail/gen-npm/templates/.babelrc._
 info: Generated testoutput/.eslintrc.js from template node_modules/@kurlytail/gen-npm/templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template node_modules/@kurlytail/gen-npm/templates/.gitignore._
 info: Generated testoutput/.npmignore from template node_modules/@kurlytail/gen-npm/templates/.npmignore._
@@ -137,6 +194,21 @@ info: Generated testoutput/webpack.config.js from template node_modules/@kurlyta
 info: Generated testoutput/src/js/index.js from template templates/src/js/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
+info: Generated testoutput/src/js/components/PasswordComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/RegisterComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/RegisterComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/InputComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/InputComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/LoginComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/LoginComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/CheckboxComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/CheckboxComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/ButtonComponent.jsx from template templates/src/js/components/component.jsx._
+info: Generated testoutput/src/js/components/__tests__/ButtonComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
+info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
 warn: Checkout branch master-sgen-generated
 warn: Checkout branch master-sgen-generated

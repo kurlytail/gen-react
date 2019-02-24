@@ -1,0 +1,37 @@
+<%
+const cell = design.MasterCell.find(cell => cell.name === context);
+const className = lodash.upperFirst(lodash.camelCase(cell.name));
+const importComponents = _.union(_.pluck(cell.output, 'to')
+    .filter(cell => cell.name.endsWith('Component'))
+    .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
+%>
+import React, { Component } from 'react';
+<%
+importComponents.forEach(name => {
+%>
+import <%=name%> from './<%=name%>';
+<%
+});
+%>
+
+class <%=className%> extends Component {
+    render() {
+        return <label>{this.props.label}
+<%if (cell.output.length === 0) {%>
+        </label>;
+<%} else {%>
+<%
+    cell.output.forEach(tube => {
+        const component = tube.to;
+        const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
+%>
+            <<%=componentClassName%> label='<%=tube.name%>'/>
+<%
+    })
+%>
+        </label>;
+<%}%>
+    }
+}
+
+export default <%=className%>;

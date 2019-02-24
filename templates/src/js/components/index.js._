@@ -1,0 +1,17 @@
+<%
+design.MasterCell.filter(cell => cell.name.endsWith('Component')).forEach(cell => {
+    const className = lodash.upperFirst(lodash.camelCase(cell.name));
+%>
+import <%=className%> from './<%=className%>';
+<%
+});
+%>
+
+export default {
+<%=
+design.MasterCell.filter(cell => cell.name.endsWith('Component')).map(cell => {
+    const className = lodash.upperFirst(lodash.camelCase(cell.name));
+    return className;
+}).join(',')
+%>
+};
