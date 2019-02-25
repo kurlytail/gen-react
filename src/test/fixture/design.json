@@ -28,14 +28,24 @@
     "pinned": false,
     "input": [],
     "output": [
-      "master_tube_Login",
-      "master_tube_Register",
-      "master_tube_Logout",
-      "master_tube_Application"
+      "MainContainer-Login-LoginComponent",
+      "MainContainer-Register-RegisterComponent",
+      "MainContainer-Logout-LogoutComponent",
+      "MainContainer-Application-AppContainer"
     ],
     "designCells": [
       "_O5TQgDhIEemsh9kXpzizFw"
     ]
+  },
+  "MainContainer-Application-AppContainer": {
+    "clazz": "MasterTube",
+    "internalName": "MainContainer-Application-AppContainer",
+    "name": "Application",
+    "designTubes": [
+      "_7ZbiADhIEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_AppContainer"
   },
   "master_cell_InputComponent": {
     "clazz": "MasterCell",
@@ -45,9 +55,9 @@
     "name": "InputComponent",
     "pinned": false,
     "input": [
-      "master_tube_Name",
-      "master_tube_Email",
-      "master_tube_UserName"
+      "RegisterComponent-Name-InputComponent",
+      "RegisterComponent-Email-InputComponent",
+      "LoginComponent-UserName-InputComponent"
     ],
     "output": [],
     "designCells": [
@@ -55,6 +65,26 @@
       "_AjswgDciEemsh9kXpzizFw",
       "_oGB3oDboEemstOQ9crAytw"
     ]
+  },
+  "LoginComponent-Password-PasswordComponent": {
+    "clazz": "MasterTube",
+    "internalName": "LoginComponent-Password-PasswordComponent",
+    "name": "Password",
+    "designTubes": [
+      "_s02-QDboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_PasswordComponent"
+  },
+  "LoginComponent-UserName-InputComponent": {
+    "clazz": "MasterTube",
+    "internalName": "LoginComponent-UserName-InputComponent",
+    "name": "UserName",
+    "designTubes": [
+      "_pMDEgDboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_InputComponent"
   },
   "_5dvKUDboEemstOQ9crAytw": {
     "clazz": "Tube",
@@ -101,6 +131,40 @@
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_wFS0QDboEemstOQ9crAytw"
   },
+  "_WwCHUji4EemDPOVSEc-Nig": {
+    "clazz": "MasterDesign",
+    "name": "react-fixture",
+    "cell": [
+      "master_cell_AppContainer",
+      "master_cell_ButtonComponent",
+      "master_cell_CheckboxComponent",
+      "master_cell_InputComponent",
+      "master_cell_LinkComponent",
+      "master_cell_ListComponent",
+      "master_cell_LoginComponent",
+      "master_cell_LogoutComponent",
+      "master_cell_MainContainer",
+      "master_cell_PasswordComponent",
+      "master_cell_RegisterComponent"
+    ],
+    "tube": [
+      "MainContainer-Application-AppContainer",
+      "RegisterComponent-ConfirmPassword-PasswordComponent",
+      "RegisterComponent-Email-InputComponent",
+      "AppContainer-GenericList-ListComponent",
+      "MainContainer-Login-LoginComponent",
+      "MainContainer-Logout-LogoutComponent",
+      "RegisterComponent-Name-InputComponent",
+      "LoginComponent-NeedHelp-LinkComponent",
+      "RegisterComponent-Password-PasswordComponent",
+      "LoginComponent-Password-PasswordComponent",
+      "MainContainer-Register-RegisterComponent",
+      "LoginComponent-Register-ButtonComponent",
+      "LoginComponent-RememberMe-CheckboxComponent",
+      "LoginComponent-SignIn-ButtonComponent",
+      "LoginComponent-UserName-InputComponent"
+    ]
+  },
   "_uqaRsDhIEemsh9kXpzizFw": {
     "clazz": "Flow",
     "name": "AppContainer",
@@ -119,16 +183,6 @@
     "from": "_2sGZQDchEemsh9kXpzizFw",
     "to": "_7dH4QDchEemsh9kXpzizFw"
   },
-  "master_tube_GenericList": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_GenericList",
-    "name": "GenericList",
-    "designTubes": [
-      "_yCIbcDhIEemsh9kXpzizFw"
-    ],
-    "from": "master_cell_AppContainer",
-    "to": "master_cell_ListComponent"
-  },
   "_ofbEgDbnEem3lv12OZ3ZJA": {
     "clazz": "Layer",
     "name": "swarm",
@@ -144,36 +198,15 @@
     ],
     "output": []
   },
-  "master_tube_Password": {
+  "AppContainer-GenericList-ListComponent": {
     "clazz": "MasterTube",
-    "internalName": "master_tube_Password",
-    "name": "Password",
+    "internalName": "AppContainer-GenericList-ListComponent",
+    "name": "GenericList",
     "designTubes": [
-      "_88Hl0DchEemsh9kXpzizFw",
-      "_s02-QDboEemstOQ9crAytw"
+      "_yCIbcDhIEemsh9kXpzizFw"
     ],
-    "from": "master_cell_RegisterComponent",
-    "to": "master_cell_PasswordComponent"
-  },
-  "master_tube_Login": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_Login",
-    "name": "Login",
-    "designTubes": [
-      "_R57v8DhIEemsh9kXpzizFw"
-    ],
-    "from": "master_cell_MainContainer",
-    "to": "master_cell_LoginComponent"
-  },
-  "master_tube_NeedHelp": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_NeedHelp",
-    "name": "NeedHelp",
-    "designTubes": [
-      "_s4Xv0DbpEemstOQ9crAytw"
-    ],
-    "from": "master_cell_LoginComponent",
-    "to": "master_cell_LinkComponent"
+    "from": "master_cell_AppContainer",
+    "to": "master_cell_ListComponent"
   },
   "_5GTx4DchEemsh9kXpzizFw": {
     "clazz": "Tube",
@@ -202,16 +235,6 @@
     ],
     "output": []
   },
-  "master_tube_UserName": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_UserName",
-    "name": "UserName",
-    "designTubes": [
-      "_pMDEgDboEemstOQ9crAytw"
-    ],
-    "from": "master_cell_LoginComponent",
-    "to": "master_cell_InputComponent"
-  },
   "_4f3z4DboEemstOQ9crAytw": {
     "clazz": "Cell",
     "count": 1,
@@ -221,6 +244,16 @@
       "_5dvKUDboEemstOQ9crAytw"
     ],
     "output": []
+  },
+  "RegisterComponent-Name-InputComponent": {
+    "clazz": "MasterTube",
+    "internalName": "RegisterComponent-Name-InputComponent",
+    "name": "Name",
+    "designTubes": [
+      "_5GTx4DchEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_RegisterComponent",
+    "to": "master_cell_InputComponent"
   },
   "_pMDEgDboEemstOQ9crAytw": {
     "clazz": "Tube",
@@ -257,32 +290,12 @@
     "name": "CheckboxComponent",
     "pinned": false,
     "input": [
-      "master_tube_RememberMe"
+      "LoginComponent-RememberMe-CheckboxComponent"
     ],
     "output": [],
     "designCells": [
       "_4f3z4DboEemstOQ9crAytw"
     ]
-  },
-  "master_tube_Application": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_Application",
-    "name": "Application",
-    "designTubes": [
-      "_7ZbiADhIEemsh9kXpzizFw"
-    ],
-    "from": "master_cell_MainContainer",
-    "to": "master_cell_AppContainer"
-  },
-  "master_tube_Logout": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_Logout",
-    "name": "Logout",
-    "designTubes": [
-      "_gtH3cDhIEemsh9kXpzizFw"
-    ],
-    "from": "master_cell_MainContainer",
-    "to": "master_cell_LogoutComponent"
   },
   "_2sGZQDchEemsh9kXpzizFw": {
     "clazz": "Cell",
@@ -297,33 +310,12 @@
       "_BsQ7EDciEemsh9kXpzizFw"
     ]
   },
-  "master_tube_Register": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_Register",
-    "name": "Register",
-    "designTubes": [
-      "_XRdOQDhIEemsh9kXpzizFw",
-      "_1ph44DboEemstOQ9crAytw"
-    ],
-    "from": "master_cell_MainContainer",
-    "to": "master_cell_RegisterComponent"
-  },
   "_R57v8DhIEemsh9kXpzizFw": {
     "clazz": "Tube",
     "name": "Login",
     "descriptor": [],
     "from": "_O5TQgDhIEemsh9kXpzizFw",
     "to": "_QqbP4DhIEemsh9kXpzizFw"
-  },
-  "master_tube_RememberMe": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_RememberMe",
-    "name": "RememberMe",
-    "designTubes": [
-      "_5dvKUDboEemstOQ9crAytw"
-    ],
-    "from": "master_cell_LoginComponent",
-    "to": "master_cell_CheckboxComponent"
   },
   "_dw1sgDhIEemsh9kXpzizFw": {
     "clazz": "Cell",
@@ -367,8 +359,9 @@
     "name": "PasswordComponent",
     "pinned": false,
     "input": [
-      "master_tube_Password",
-      "master_tube_ConfirmPassword"
+      "RegisterComponent-Password-PasswordComponent",
+      "RegisterComponent-ConfirmPassword-PasswordComponent",
+      "LoginComponent-Password-PasswordComponent"
     ],
     "output": [],
     "designCells": [
@@ -385,13 +378,13 @@
     "name": "RegisterComponent",
     "pinned": false,
     "input": [
-      "master_tube_Register"
+      "MainContainer-Register-RegisterComponent"
     ],
     "output": [
-      "master_tube_Name",
-      "master_tube_Password",
-      "master_tube_ConfirmPassword",
-      "master_tube_Email"
+      "RegisterComponent-Name-InputComponent",
+      "RegisterComponent-Password-PasswordComponent",
+      "RegisterComponent-ConfirmPassword-PasswordComponent",
+      "RegisterComponent-Email-InputComponent"
     ],
     "designCells": [
       "_WUf2wDhIEemsh9kXpzizFw",
@@ -422,6 +415,36 @@
     "from": "_O5TQgDhIEemsh9kXpzizFw",
     "to": "_dw1sgDhIEemsh9kXpzizFw"
   },
+  "MainContainer-Register-RegisterComponent": {
+    "clazz": "MasterTube",
+    "internalName": "MainContainer-Register-RegisterComponent",
+    "name": "Register",
+    "designTubes": [
+      "_XRdOQDhIEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_RegisterComponent"
+  },
+  "RegisterComponent-Password-PasswordComponent": {
+    "clazz": "MasterTube",
+    "internalName": "RegisterComponent-Password-PasswordComponent",
+    "name": "Password",
+    "designTubes": [
+      "_88Hl0DchEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_RegisterComponent",
+    "to": "master_cell_PasswordComponent"
+  },
+  "LoginComponent-RememberMe-CheckboxComponent": {
+    "clazz": "MasterTube",
+    "internalName": "LoginComponent-RememberMe-CheckboxComponent",
+    "name": "RememberMe",
+    "designTubes": [
+      "_5dvKUDboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_CheckboxComponent"
+  },
   "_k6QfMDboEemstOQ9crAytw": {
     "clazz": "Cell",
     "count": 1,
@@ -445,10 +468,10 @@
     "name": "AppContainer",
     "pinned": false,
     "input": [
-      "master_tube_Application"
+      "MainContainer-Application-AppContainer"
     ],
     "output": [
-      "master_tube_GenericList"
+      "AppContainer-GenericList-ListComponent"
     ],
     "designCells": [
       "_6KWfwDhIEemsh9kXpzizFw",
@@ -462,22 +485,22 @@
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_qOMBgDbpEemstOQ9crAytw"
   },
-  "master_tube_ConfirmPassword": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_ConfirmPassword",
-    "name": "ConfirmPassword",
-    "designTubes": [
-      "_-_UMoDchEemsh9kXpzizFw"
-    ],
-    "from": "master_cell_RegisterComponent",
-    "to": "master_cell_PasswordComponent"
-  },
   "_XRdOQDhIEemsh9kXpzizFw": {
     "clazz": "Tube",
     "name": "Register",
     "descriptor": [],
     "from": "_O5TQgDhIEemsh9kXpzizFw",
     "to": "_WUf2wDhIEemsh9kXpzizFw"
+  },
+  "MainContainer-Logout-LogoutComponent": {
+    "clazz": "MasterTube",
+    "internalName": "MainContainer-Logout-LogoutComponent",
+    "name": "Logout",
+    "designTubes": [
+      "_gtH3cDhIEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_LogoutComponent"
   },
   "master_cell_LoginComponent": {
     "clazz": "MasterCell",
@@ -487,13 +510,15 @@
     "name": "LoginComponent",
     "pinned": false,
     "input": [
-      "master_tube_Login"
+      "MainContainer-Login-LoginComponent"
     ],
     "output": [
-      "master_tube_UserName",
-      "master_tube_SignIn",
-      "master_tube_RememberMe",
-      "master_tube_NeedHelp"
+      "LoginComponent-UserName-InputComponent",
+      "LoginComponent-Password-PasswordComponent",
+      "LoginComponent-SignIn-ButtonComponent",
+      "LoginComponent-Register-ButtonComponent",
+      "LoginComponent-RememberMe-CheckboxComponent",
+      "LoginComponent-NeedHelp-LinkComponent"
     ],
     "designCells": [
       "_QqbP4DhIEemsh9kXpzizFw",
@@ -520,15 +545,15 @@
     ],
     "output": []
   },
-  "master_tube_SignIn": {
+  "RegisterComponent-ConfirmPassword-PasswordComponent": {
     "clazz": "MasterTube",
-    "internalName": "master_tube_SignIn",
-    "name": "SignIn",
+    "internalName": "RegisterComponent-ConfirmPassword-PasswordComponent",
+    "name": "ConfirmPassword",
     "designTubes": [
-      "_yErSEDboEemstOQ9crAytw"
+      "_-_UMoDchEemsh9kXpzizFw"
     ],
-    "from": "master_cell_LoginComponent",
-    "to": "master_cell_ButtonComponent"
+    "from": "master_cell_RegisterComponent",
+    "to": "master_cell_PasswordComponent"
   },
   "_wFS0QDboEemstOQ9crAytw": {
     "clazz": "Cell",
@@ -557,6 +582,16 @@
     "from": "_2sGZQDchEemsh9kXpzizFw",
     "to": "_9n6U0DchEemsh9kXpzizFw"
   },
+  "LoginComponent-SignIn-ButtonComponent": {
+    "clazz": "MasterTube",
+    "internalName": "LoginComponent-SignIn-ButtonComponent",
+    "name": "SignIn",
+    "designTubes": [
+      "_yErSEDboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_ButtonComponent"
+  },
   "_rqakYDboEemstOQ9crAytw": {
     "clazz": "Cell",
     "count": 1,
@@ -575,22 +610,32 @@
     "name": "LinkComponent",
     "pinned": false,
     "input": [
-      "master_tube_NeedHelp"
+      "LoginComponent-NeedHelp-LinkComponent"
     ],
     "output": [],
     "designCells": [
       "_qOMBgDbpEemstOQ9crAytw"
     ]
   },
-  "master_tube_Name": {
+  "RegisterComponent-Email-InputComponent": {
     "clazz": "MasterTube",
-    "internalName": "master_tube_Name",
-    "name": "Name",
+    "internalName": "RegisterComponent-Email-InputComponent",
+    "name": "Email",
     "designTubes": [
-      "_5GTx4DchEemsh9kXpzizFw"
+      "_BsQ7EDciEemsh9kXpzizFw"
     ],
     "from": "master_cell_RegisterComponent",
     "to": "master_cell_InputComponent"
+  },
+  "LoginComponent-NeedHelp-LinkComponent": {
+    "clazz": "MasterTube",
+    "internalName": "LoginComponent-NeedHelp-LinkComponent",
+    "name": "NeedHelp",
+    "designTubes": [
+      "_s4Xv0DbpEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_LinkComponent"
   },
   "_s02-QDboEemstOQ9crAytw": {
     "clazz": "Tube",
@@ -608,6 +653,16 @@
       "_7ZbiADhIEemsh9kXpzizFw"
     ],
     "output": []
+  },
+  "MainContainer-Login-LoginComponent": {
+    "clazz": "MasterTube",
+    "internalName": "MainContainer-Login-LoginComponent",
+    "name": "Login",
+    "designTubes": [
+      "_R57v8DhIEemsh9kXpzizFw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_LoginComponent"
   },
   "_qOMBgDbpEemstOQ9crAytw": {
     "clazz": "Cell",
@@ -641,7 +696,7 @@
     "name": "ListComponent",
     "pinned": false,
     "input": [
-      "master_tube_GenericList"
+      "AppContainer-GenericList-ListComponent"
     ],
     "output": [],
     "designCells": [
@@ -656,7 +711,7 @@
     "name": "LogoutComponent",
     "pinned": false,
     "input": [
-      "master_tube_Logout"
+      "MainContainer-Logout-LogoutComponent"
     ],
     "output": [],
     "designCells": [
@@ -673,48 +728,6 @@
     ],
     "output": []
   },
-  "master_tube_Email": {
-    "clazz": "MasterTube",
-    "internalName": "master_tube_Email",
-    "name": "Email",
-    "designTubes": [
-      "_BsQ7EDciEemsh9kXpzizFw"
-    ],
-    "from": "master_cell_RegisterComponent",
-    "to": "master_cell_InputComponent"
-  },
-  "_oiQ9IjbnEem3lv12OZ3ZJA": {
-    "clazz": "MasterDesign",
-    "name": "react-fixture",
-    "cell": [
-      "master_cell_AppContainer",
-      "master_cell_ButtonComponent",
-      "master_cell_CheckboxComponent",
-      "master_cell_InputComponent",
-      "master_cell_LinkComponent",
-      "master_cell_ListComponent",
-      "master_cell_LoginComponent",
-      "master_cell_LogoutComponent",
-      "master_cell_MainContainer",
-      "master_cell_PasswordComponent",
-      "master_cell_RegisterComponent"
-    ],
-    "tube": [
-      "master_tube_Application",
-      "master_tube_ConfirmPassword",
-      "master_tube_Email",
-      "master_tube_GenericList",
-      "master_tube_Login",
-      "master_tube_Logout",
-      "master_tube_Name",
-      "master_tube_NeedHelp",
-      "master_tube_Password",
-      "master_tube_Register",
-      "master_tube_RememberMe",
-      "master_tube_SignIn",
-      "master_tube_UserName"
-    ]
-  },
   "master_cell_ButtonComponent": {
     "clazz": "MasterCell",
     "count": 1,
@@ -723,12 +736,23 @@
     "name": "ButtonComponent",
     "pinned": false,
     "input": [
-      "master_tube_SignIn"
+      "LoginComponent-SignIn-ButtonComponent",
+      "LoginComponent-Register-ButtonComponent"
     ],
     "output": [],
     "designCells": [
       "_wFS0QDboEemstOQ9crAytw",
       "_0VjIgDboEemstOQ9crAytw"
     ]
+  },
+  "LoginComponent-Register-ButtonComponent": {
+    "clazz": "MasterTube",
+    "internalName": "LoginComponent-Register-ButtonComponent",
+    "name": "Register",
+    "designTubes": [
+      "_1ph44DboEemstOQ9crAytw"
+    ],
+    "from": "master_cell_LoginComponent",
+    "to": "master_cell_ButtonComponent"
   }
 }
