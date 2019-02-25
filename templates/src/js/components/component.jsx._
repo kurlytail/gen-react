@@ -23,7 +23,11 @@ import <%=name%> from './<%=name%>';
 
 class <%=className%> extends Component {
     render() {
-        return <label>{this.props.label}
+        return <section className="card">
+            <header className="card-header bg-light text-left">
+                <h2>{this.props.label}</h2>
+            </header>
+            <div className="card-body">
 <%
 cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
     .forEach(tube => {
@@ -34,7 +38,8 @@ cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.en
 <%
 });
 %>
-        </label>;
+            </div>
+        </section>;
     }
 }
 
