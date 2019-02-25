@@ -16,7 +16,8 @@
       "_R57v8DhIEemsh9kXpzizFw",
       "_XRdOQDhIEemsh9kXpzizFw",
       "_gtH3cDhIEemsh9kXpzizFw",
-      "_7ZbiADhIEemsh9kXpzizFw"
+      "_7ZbiADhIEemsh9kXpzizFw",
+      "_rN-48DkKEemDPOVSEc-Nig"
     ]
   },
   "master_cell_MainContainer": {
@@ -31,7 +32,8 @@
       "MainContainer-Login-LoginComponent",
       "MainContainer-Register-RegisterComponent",
       "MainContainer-Logout-LogoutComponent",
-      "MainContainer-Application-AppContainer"
+      "MainContainer-Application-AppContainer",
+      "MainContainer-Navbar-NavbarContainer"
     ],
     "designCells": [
       "_O5TQgDhIEemsh9kXpzizFw"
@@ -93,6 +95,26 @@
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_4f3z4DboEemstOQ9crAytw"
   },
+  "MainContainer-Navbar-NavbarContainer": {
+    "clazz": "MasterTube",
+    "internalName": "MainContainer-Navbar-NavbarContainer",
+    "name": "Navbar",
+    "designTubes": [
+      "_rN-48DkKEemDPOVSEc-Nig"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_NavbarContainer"
+  },
+  "NavbarContainer-UserPanel-UserPanelContainer": {
+    "clazz": "MasterTube",
+    "internalName": "NavbarContainer-UserPanel-UserPanelContainer",
+    "name": "UserPanel",
+    "designTubes": [
+      "_u6F-UDkKEemDPOVSEc-Nig"
+    ],
+    "from": "master_cell_NavbarContainer",
+    "to": "master_cell_UserPanelContainer"
+  },
   "_ilOhgDboEemstOQ9crAytw": {
     "clazz": "Flow",
     "name": "LoginComponent",
@@ -144,8 +166,10 @@
       "master_cell_LoginComponent",
       "master_cell_LogoutComponent",
       "master_cell_MainContainer",
+      "master_cell_NavbarContainer",
       "master_cell_PasswordComponent",
-      "master_cell_RegisterComponent"
+      "master_cell_RegisterComponent",
+      "master_cell_UserPanelContainer"
     ],
     "tube": [
       "MainContainer-Application-AppContainer",
@@ -154,7 +178,9 @@
       "AppContainer-GenericList-ListComponent",
       "MainContainer-Login-LoginComponent",
       "MainContainer-Logout-LogoutComponent",
+      "UserPanelContainer-Logout-LogoutComponent",
       "RegisterComponent-Name-InputComponent",
+      "MainContainer-Navbar-NavbarContainer",
       "LoginComponent-NeedHelp-LinkComponent",
       "RegisterComponent-Password-PasswordComponent",
       "LoginComponent-Password-PasswordComponent",
@@ -162,7 +188,8 @@
       "LoginComponent-Register-ButtonComponent",
       "LoginComponent-RememberMe-CheckboxComponent",
       "LoginComponent-SignIn-ButtonComponent",
-      "LoginComponent-UserName-InputComponent"
+      "LoginComponent-UserName-InputComponent",
+      "NavbarContainer-UserPanel-UserPanelContainer"
     ]
   },
   "_uqaRsDhIEemsh9kXpzizFw": {
@@ -182,6 +209,13 @@
     "descriptor": [],
     "from": "_2sGZQDchEemsh9kXpzizFw",
     "to": "_7dH4QDchEemsh9kXpzizFw"
+  },
+  "_1qc30DkKEemDPOVSEc-Nig": {
+    "clazz": "Tube",
+    "name": "Logout",
+    "descriptor": [],
+    "from": "_mvgigDkKEemDPOVSEc-Nig",
+    "to": "_0vY9wDkKEemDPOVSEc-Nig"
   },
   "_ofbEgDbnEem3lv12OZ3ZJA": {
     "clazz": "Layer",
@@ -207,6 +241,16 @@
     ],
     "from": "master_cell_AppContainer",
     "to": "master_cell_ListComponent"
+  },
+  "_mvgigDkKEemDPOVSEc-Nig": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "UserPanelContainer",
+    "input": [],
+    "output": [
+      "_1qc30DkKEemDPOVSEc-Nig"
+    ]
   },
   "_5GTx4DchEemsh9kXpzizFw": {
     "clazz": "Tube",
@@ -317,6 +361,18 @@
     "from": "_O5TQgDhIEemsh9kXpzizFw",
     "to": "_QqbP4DhIEemsh9kXpzizFw"
   },
+  "_oygVADkKEemDPOVSEc-Nig": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "NavbarContainer",
+    "input": [
+      "_rN-48DkKEemDPOVSEc-Nig"
+    ],
+    "output": [
+      "_u6F-UDkKEemDPOVSEc-Nig"
+    ]
+  },
   "_dw1sgDhIEemsh9kXpzizFw": {
     "clazz": "Cell",
     "count": 1,
@@ -399,13 +455,17 @@
       "_QqbP4DhIEemsh9kXpzizFw",
       "_WUf2wDhIEemsh9kXpzizFw",
       "_dw1sgDhIEemsh9kXpzizFw",
-      "_6KWfwDhIEemsh9kXpzizFw"
+      "_6KWfwDhIEemsh9kXpzizFw",
+      "_oygVADkKEemDPOVSEc-Nig",
+      "_uBeUQDkKEemDPOVSEc-Nig"
     ],
     "tube": [
       "_R57v8DhIEemsh9kXpzizFw",
       "_XRdOQDhIEemsh9kXpzizFw",
       "_gtH3cDhIEemsh9kXpzizFw",
-      "_7ZbiADhIEemsh9kXpzizFw"
+      "_7ZbiADhIEemsh9kXpzizFw",
+      "_rN-48DkKEemDPOVSEc-Nig",
+      "_u6F-UDkKEemDPOVSEc-Nig"
     ]
   },
   "_gtH3cDhIEemsh9kXpzizFw": {
@@ -444,6 +504,13 @@
     ],
     "from": "master_cell_LoginComponent",
     "to": "master_cell_CheckboxComponent"
+  },
+  "_u6F-UDkKEemDPOVSEc-Nig": {
+    "clazz": "Tube",
+    "name": "UserPanel",
+    "descriptor": [],
+    "from": "_oygVADkKEemDPOVSEc-Nig",
+    "to": "_uBeUQDkKEemDPOVSEc-Nig"
   },
   "_k6QfMDboEemstOQ9crAytw": {
     "clazz": "Cell",
@@ -545,6 +612,16 @@
     ],
     "output": []
   },
+  "_uBeUQDkKEemDPOVSEc-Nig": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "UserPanelContainer",
+    "input": [
+      "_u6F-UDkKEemDPOVSEc-Nig"
+    ],
+    "output": []
+  },
   "RegisterComponent-ConfirmPassword-PasswordComponent": {
     "clazz": "MasterTube",
     "internalName": "RegisterComponent-ConfirmPassword-PasswordComponent",
@@ -602,6 +679,13 @@
     ],
     "output": []
   },
+  "_rN-48DkKEemDPOVSEc-Nig": {
+    "clazz": "Tube",
+    "name": "Navbar",
+    "descriptor": [],
+    "from": "_O5TQgDhIEemsh9kXpzizFw",
+    "to": "_oygVADkKEemDPOVSEc-Nig"
+  },
   "master_cell_LinkComponent": {
     "clazz": "MasterCell",
     "count": 1,
@@ -616,6 +700,16 @@
     "designCells": [
       "_qOMBgDbpEemstOQ9crAytw"
     ]
+  },
+  "UserPanelContainer-Logout-LogoutComponent": {
+    "clazz": "MasterTube",
+    "internalName": "UserPanelContainer-Logout-LogoutComponent",
+    "name": "Logout",
+    "designTubes": [
+      "_1qc30DkKEemDPOVSEc-Nig"
+    ],
+    "from": "master_cell_UserPanelContainer",
+    "to": "master_cell_LogoutComponent"
   },
   "RegisterComponent-Email-InputComponent": {
     "clazz": "MasterTube",
@@ -636,6 +730,24 @@
     ],
     "from": "master_cell_LoginComponent",
     "to": "master_cell_LinkComponent"
+  },
+  "master_cell_UserPanelContainer": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_UserPanelContainer",
+    "name": "UserPanelContainer",
+    "pinned": false,
+    "input": [
+      "NavbarContainer-UserPanel-UserPanelContainer"
+    ],
+    "output": [
+      "UserPanelContainer-Logout-LogoutComponent"
+    ],
+    "designCells": [
+      "_uBeUQDkKEemDPOVSEc-Nig",
+      "_mvgigDkKEemDPOVSEc-Nig"
+    ]
   },
   "_s02-QDboEemstOQ9crAytw": {
     "clazz": "Tube",
@@ -663,6 +775,17 @@
     ],
     "from": "master_cell_MainContainer",
     "to": "master_cell_LoginComponent"
+  },
+  "_lalW8DkKEemDPOVSEc-Nig": {
+    "clazz": "Flow",
+    "name": "UserPanelContainer",
+    "cell": [
+      "_mvgigDkKEemDPOVSEc-Nig",
+      "_0vY9wDkKEemDPOVSEc-Nig"
+    ],
+    "tube": [
+      "_1qc30DkKEemDPOVSEc-Nig"
+    ]
   },
   "_qOMBgDbpEemstOQ9crAytw": {
     "clazz": "Cell",
@@ -703,6 +826,23 @@
       "_w6EAIDhIEemsh9kXpzizFw"
     ]
   },
+  "master_cell_NavbarContainer": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_NavbarContainer",
+    "name": "NavbarContainer",
+    "pinned": false,
+    "input": [
+      "MainContainer-Navbar-NavbarContainer"
+    ],
+    "output": [
+      "NavbarContainer-UserPanel-UserPanelContainer"
+    ],
+    "designCells": [
+      "_oygVADkKEemDPOVSEc-Nig"
+    ]
+  },
   "master_cell_LogoutComponent": {
     "clazz": "MasterCell",
     "count": 1,
@@ -711,11 +851,13 @@
     "name": "LogoutComponent",
     "pinned": false,
     "input": [
-      "MainContainer-Logout-LogoutComponent"
+      "MainContainer-Logout-LogoutComponent",
+      "UserPanelContainer-Logout-LogoutComponent"
     ],
     "output": [],
     "designCells": [
-      "_dw1sgDhIEemsh9kXpzizFw"
+      "_dw1sgDhIEemsh9kXpzizFw",
+      "_0vY9wDkKEemDPOVSEc-Nig"
     ]
   },
   "_oGB3oDboEemstOQ9crAytw": {
@@ -754,5 +896,15 @@
     ],
     "from": "master_cell_LoginComponent",
     "to": "master_cell_ButtonComponent"
+  },
+  "_0vY9wDkKEemDPOVSEc-Nig": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "LogoutComponent",
+    "input": [
+      "_1qc30DkKEemDPOVSEc-Nig"
+    ],
+    "output": []
   }
 }
