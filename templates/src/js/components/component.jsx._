@@ -23,11 +23,11 @@ import <%=name%> from './<%=name%>';
 
 class <%=className%> extends Component {
     render() {
-        return <section className="card">
-            <header className="card-header bg-light text-left">
+        return <section <%=extension('react-tag.*', 'component-attributes').join(' ')%>>
+            <header <%=extension('react-tag.*', 'component-header-attributes').join(' ')%>>
                 <h2>{this.props.label}</h2>
             </header>
-            <div className="card-body">
+            <div <%=extension('react-tag.*', 'component-body-attributes').join(' ')%>>
 <%
 cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
     .forEach(tube => {

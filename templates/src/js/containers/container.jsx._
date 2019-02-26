@@ -22,7 +22,7 @@ import <%=name%> from './<%=name%>';
 
 class <%=className%> extends Component {
     render() {
-        return <div>
+        return <div <%=extension('react-tag.*', 'container-attributes').join(' ')%>>
 <%
 cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
     .forEach(tube => {

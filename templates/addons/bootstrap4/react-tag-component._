@@ -1,0 +1,7 @@
+<%if (labels.includes('component-attributes')) {%>
+className={'card'}
+<%} else if (labels.includes('component-header-attributes')) {%>
+className={'card-header'}
+<%} else if (labels.includes('component-body-attributes')) {%>
+className={'card-body'}
+<%}%>
