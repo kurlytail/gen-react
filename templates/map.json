@@ -9,10 +9,42 @@
 design.MasterCell.filter(cell => cell.name.endsWith('Component')).forEach(cell => {
     const className = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
+<% if (className === 'ButtonComponent') { %>
+    "src/js/components/<%=className%>.jsx": {
+        "template": "src/js/components/button-component.jsx._",
+        "context": "<%=cell.name%>"
+    },
+<% } else if (className === 'CheckboxComponent') { %>
+    "src/js/components/<%=className%>.jsx": {
+        "template": "src/js/components/checkbox-component.jsx._",
+        "context": "<%=cell.name%>"
+    },
+<% } else if (className === 'InputComponent') { %>
+    "src/js/components/<%=className%>.jsx": {
+        "template": "src/js/components/input-component.jsx._",
+        "context": "<%=cell.name%>"
+    },
+<% } else if (className === 'EmailComponent') { %>
+    "src/js/components/<%=className%>.jsx": {
+        "template": "src/js/components/email-component.jsx._",
+        "context": "<%=cell.name%>"
+    },
+<% } else if (className === 'PasswordComponent') { %>
+    "src/js/components/<%=className%>.jsx": {
+        "template": "src/js/components/password-component.jsx._",
+        "context": "<%=cell.name%>"
+    },
+<% } else if (className === 'LinkComponent') { %>
+    "src/js/components/<%=className%>.jsx": {
+        "template": "src/js/components/link-component.jsx._",
+        "context": "<%=cell.name%>"
+    },
+<% } else { %>
     "src/js/components/<%=className%>.jsx": {
         "template": "src/js/components/component.jsx._",
         "context": "<%=cell.name%>"
     },
+<% } %>
     "src/js/components/__tests__/<%=className%>.jsx": {
         "template": "src/js/components/__tests__/component.jsx._",
         "context": "<%=cell.name%>"
