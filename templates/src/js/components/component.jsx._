@@ -4,15 +4,9 @@ const className = lodash.upperFirst(lodash.camelCase(cell.name));
 const importComponents = _.union(_.pluck(cell.output, 'to')
     .filter(cell => cell.name.endsWith('Component'))
     .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
-const importContainers = _.union(_.pluck(cell.output, 'to')
-    .filter(cell => cell.name.endsWith('Container'))
-    .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
 %>
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-<%if (importContainers.length !== 0) {%>
-import {<%=importContainers.join(',')%>} from '../containers';
-<%}%>
 <%
 importComponents.forEach(name => {
 %>
@@ -29,7 +23,7 @@ class <%=className%> extends Component {
             </header>
             <div <%=extension('react-tag.*', 'component-body-attributes').join(' ')%>>
 <%
-cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
+cell.output.filter(tube => tube.to.name.endsWith('Component'))
     .forEach(tube => {
     const component = tube.to;
     const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
