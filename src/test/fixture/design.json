@@ -13,15 +13,29 @@
     "internalName": "master_cell_MainContainer",
     "name": "MainContainer",
     "pinned": false,
-    "input": [],
+    "input": [
+      "RootContainer-Application-MainContainer"
+    ],
     "output": [
       "MainContainer-Navigation-NavigationBarComponent",
       "MainContainer-Status-StatusComponent",
-      "MainContainer-MainWindow-MainWindowComponent",
+      "MainContainer-MainWindow-AppContainer",
       "MainContainer-SidePanel-SidePanelComponent"
     ],
     "designCells": [
-      "_mmoH8DuqEem2adJ_qP5fgw"
+      "_mmoH8DuqEem2adJ_qP5fgw",
+      "_CmuWYDw_Eem-JP8KvVO4dQ",
+      "_RlFzIDw_Eem-JP8KvVO4dQ"
+    ]
+  },
+  "_QhfoIDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "RootContainer",
+    "input": [],
+    "output": [
+      "_SgZk0Dw_Eem-JP8KvVO4dQ"
     ]
   },
   "LoginComponent-Password-PasswordComponent": {
@@ -81,6 +95,39 @@
       "_iInBEDnUEemDPOVSEc-Nig"
     ]
   },
+  "__YrtEDw-Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "RootContainer",
+    "input": [],
+    "output": [
+      "_EO2x0Dw_Eem-JP8KvVO4dQ",
+      "_FP2UwDw_Eem-JP8KvVO4dQ",
+      "_HJsyUDw_Eem-JP8KvVO4dQ"
+    ]
+  },
+  "_RlFzIDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "MainContainer",
+    "input": [
+      "_SgZk0Dw_Eem-JP8KvVO4dQ"
+    ],
+    "output": []
+  },
+  "_Lvl_YDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Flow",
+    "name": "DefaultRoute",
+    "cell": [
+      "_QhfoIDw_Eem-JP8KvVO4dQ",
+      "_RlFzIDw_Eem-JP8KvVO4dQ"
+    ],
+    "tube": [
+      "_SgZk0Dw_Eem-JP8KvVO4dQ"
+    ]
+  },
   "_AjswgDciEemsh9kXpzizFw": {
     "clazz": "Cell",
     "count": 1,
@@ -108,31 +155,15 @@
       "_1qc30DkKEemDPOVSEc-Nig"
     ]
   },
-  "_H2qRIDueEem2adJ_qP5fgw": {
-    "clazz": "Flow",
-    "name": "GlobalRoute",
-    "cell": [
-      "_hn6BoDueEem2adJ_qP5fgw",
-      "_jlg90DueEem2adJ_qP5fgw",
-      "_mKZVYDueEem2adJ_qP5fgw",
-      "_n6Bf8DueEem2adJ_qP5fgw",
-      "_UA15kDufEem2adJ_qP5fgw",
-      "_klMcsDufEem2adJ_qP5fgw"
+  "_CmuWYDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "MainContainer",
+    "input": [
+      "_HJsyUDw_Eem-JP8KvVO4dQ"
     ],
-    "tube": [
-      "_VF9HgDufEem2adJ_qP5fgw",
-      "_mhP5sDufEem2adJ_qP5fgw"
-    ]
-  },
-  "NavigationBarComponent-UserPanel-UserPanelContainer": {
-    "clazz": "MasterTube",
-    "internalName": "NavigationBarComponent-UserPanel-UserPanelContainer",
-    "name": "UserPanel",
-    "designTubes": [
-      "_VF9HgDufEem2adJ_qP5fgw"
-    ],
-    "from": "master_cell_NavigationBarComponent",
-    "to": "master_cell_UserPanelContainer"
+    "output": []
   },
   "_5GTx4DchEemsh9kXpzizFw": {
     "clazz": "Tube",
@@ -140,6 +171,16 @@
     "descriptor": [],
     "from": "_2sGZQDchEemsh9kXpzizFw",
     "to": "_3gzzsDchEemsh9kXpzizFw"
+  },
+  "_xrMM4Dw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "UserPanelContainer",
+    "input": [
+      "_0_DxYDw_Eem-JP8KvVO4dQ"
+    ],
+    "output": []
   },
   "MainContainer-Status-StatusComponent": {
     "clazz": "MasterTube",
@@ -150,6 +191,13 @@
     ],
     "from": "master_cell_MainContainer",
     "to": "master_cell_StatusComponent"
+  },
+  "_0_DxYDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Tube",
+    "name": "Account",
+    "descriptor": [],
+    "from": "_wcaFkDw_Eem-JP8KvVO4dQ",
+    "to": "_xrMM4Dw_Eem-JP8KvVO4dQ"
   },
   "_9n6U0DchEemsh9kXpzizFw": {
     "clazz": "Cell",
@@ -181,15 +229,12 @@
     ],
     "output": []
   },
-  "_UA15kDufEem2adJ_qP5fgw": {
-    "clazz": "Cell",
-    "count": 1,
-    "external": false,
-    "name": "UserPanelContainer",
-    "input": [
-      "_VF9HgDufEem2adJ_qP5fgw"
-    ],
-    "output": []
+  "_FP2UwDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Tube",
+    "name": "Register",
+    "descriptor": [],
+    "from": "__YrtEDw-Eem-JP8KvVO4dQ",
+    "to": "_B126IDw_Eem-JP8KvVO4dQ"
   },
   "_w6EAIDhIEemsh9kXpzizFw": {
     "clazz": "Cell",
@@ -245,22 +290,29 @@
       "_cR8UcDucEemDPOVSEc-Nig"
     ]
   },
-  "_mhP5sDufEem2adJ_qP5fgw": {
+  "_HJsyUDw_Eem-JP8KvVO4dQ": {
     "clazz": "Tube",
     "name": "Application",
     "descriptor": [],
-    "from": "_n6Bf8DueEem2adJ_qP5fgw",
-    "to": "_klMcsDufEem2adJ_qP5fgw"
+    "from": "__YrtEDw-Eem-JP8KvVO4dQ",
+    "to": "_CmuWYDw_Eem-JP8KvVO4dQ"
   },
-  "MainWindowComponent-Application-AppContainer": {
-    "clazz": "MasterTube",
-    "internalName": "MainWindowComponent-Application-AppContainer",
-    "name": "Application",
-    "designTubes": [
-      "_mhP5sDufEem2adJ_qP5fgw"
-    ],
-    "from": "master_cell_MainWindowComponent",
-    "to": "master_cell_AppContainer"
+  "_dAYKsDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "RootContainer",
+    "input": [],
+    "output": [
+      "_edQ_cDw_Eem-JP8KvVO4dQ"
+    ]
+  },
+  "_edQ_cDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Tube",
+    "name": "Login",
+    "descriptor": [],
+    "from": "_dAYKsDw_Eem-JP8KvVO4dQ",
+    "to": "_dtHU4Dw_Eem-JP8KvVO4dQ"
   },
   "_j981gDuqEem2adJ_qP5fgw": {
     "clazz": "Flow",
@@ -314,7 +366,9 @@
     "internalName": "master_cell_RegisterComponent",
     "name": "RegisterComponent",
     "pinned": false,
-    "input": [],
+    "input": [
+      "RootContainer-Register-RegisterComponent"
+    ],
     "output": [
       "RegisterComponent-Name-InputComponent",
       "RegisterComponent-Password-PasswordComponent",
@@ -324,7 +378,9 @@
       "RegisterComponent-SignIn-ButtonComponent"
     ],
     "designCells": [
-      "_2sGZQDchEemsh9kXpzizFw"
+      "_2sGZQDchEemsh9kXpzizFw",
+      "_B126IDw_Eem-JP8KvVO4dQ",
+      "_gJAvkDw_Eem-JP8KvVO4dQ"
     ]
   },
   "_iInBEDnUEemDPOVSEc-Nig": {
@@ -333,6 +389,16 @@
     "descriptor": [],
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_gZFkMDnUEemDPOVSEc-Nig"
+  },
+  "_B126IDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "RegisterComponent",
+    "input": [
+      "_FP2UwDw_Eem-JP8KvVO4dQ"
+    ],
+    "output": []
   },
   "RegisterComponent-SignIn-ButtonComponent": {
     "clazz": "MasterTube",
@@ -386,14 +452,14 @@
     "name": "AppContainer",
     "pinned": false,
     "input": [
-      "MainWindowComponent-Application-AppContainer"
+      "MainContainer-MainWindow-AppContainer"
     ],
     "output": [
       "AppContainer-GenericList-ListComponent"
     ],
     "designCells": [
-      "_vhV5sDhIEemsh9kXpzizFw",
-      "_klMcsDufEem2adJ_qP5fgw"
+      "_rJpnMDuqEem2adJ_qP5fgw",
+      "_vhV5sDhIEemsh9kXpzizFw"
     ]
   },
   "_s4Xv0DbpEemstOQ9crAytw": {
@@ -420,7 +486,9 @@
     "internalName": "master_cell_LoginComponent",
     "name": "LoginComponent",
     "pinned": false,
-    "input": [],
+    "input": [
+      "RootContainer-Login-LoginComponent"
+    ],
     "output": [
       "LoginComponent-UserName-InputComponent",
       "LoginComponent-Password-PasswordComponent",
@@ -430,7 +498,29 @@
       "LoginComponent-NeedHelp-LinkComponent"
     ],
     "designCells": [
-      "_k6QfMDboEemstOQ9crAytw"
+      "_k6QfMDboEemstOQ9crAytw",
+      "__9H24Dw-Eem-JP8KvVO4dQ",
+      "_dtHU4Dw_Eem-JP8KvVO4dQ"
+    ]
+  },
+  "__9H24Dw-Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "LoginComponent",
+    "input": [
+      "_EO2x0Dw_Eem-JP8KvVO4dQ"
+    ],
+    "output": []
+  },
+  "_fPiJ4Dw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "RootContainer",
+    "input": [],
+    "output": [
+      "_hP6GMDw_Eem-JP8KvVO4dQ"
     ]
   },
   "_0VjIgDboEemstOQ9crAytw": {
@@ -463,12 +553,27 @@
     "from": "master_cell_MainContainer",
     "to": "master_cell_SidePanelComponent"
   },
-  "_VF9HgDufEem2adJ_qP5fgw": {
-    "clazz": "Tube",
-    "name": "UserPanel",
-    "descriptor": [],
-    "from": "_hn6BoDueEem2adJ_qP5fgw",
-    "to": "_UA15kDufEem2adJ_qP5fgw"
+  "RootContainer-Register-RegisterComponent": {
+    "clazz": "MasterTube",
+    "internalName": "RootContainer-Register-RegisterComponent",
+    "name": "Register",
+    "designTubes": [
+      "_FP2UwDw_Eem-JP8KvVO4dQ",
+      "_hP6GMDw_Eem-JP8KvVO4dQ"
+    ],
+    "from": "master_cell_RootContainer",
+    "to": "master_cell_RegisterComponent"
+  },
+  "_u-nR4Dw_Eem-JP8KvVO4dQ": {
+    "clazz": "Flow",
+    "name": "NavigationBarComponent",
+    "cell": [
+      "_wcaFkDw_Eem-JP8KvVO4dQ",
+      "_xrMM4Dw_Eem-JP8KvVO4dQ"
+    ],
+    "tube": [
+      "_0_DxYDw_Eem-JP8KvVO4dQ"
+    ]
   },
   "UserPanelContainer-Logout-LogoutComponent": {
     "clazz": "MasterTube",
@@ -484,7 +589,7 @@
     "clazz": "Cell",
     "count": 1,
     "external": false,
-    "name": "MainWindowComponent",
+    "name": "AppContainer",
     "input": [
       "_wapmwDuqEem2adJ_qP5fgw"
     ],
@@ -508,14 +613,29 @@
     "name": "UserPanelContainer",
     "pinned": false,
     "input": [
-      "NavigationBarComponent-UserPanel-UserPanelContainer"
+      "NavigationBarComponent-Account-UserPanelContainer"
     ],
     "output": [
       "UserPanelContainer-Logout-LogoutComponent"
     ],
     "designCells": [
-      "_mvgigDkKEemDPOVSEc-Nig",
-      "_UA15kDufEem2adJ_qP5fgw"
+      "_xrMM4Dw_Eem-JP8KvVO4dQ",
+      "_mvgigDkKEemDPOVSEc-Nig"
+    ]
+  },
+  "_-i3fYDw-Eem-JP8KvVO4dQ": {
+    "clazz": "Flow",
+    "name": "RootContainer",
+    "cell": [
+      "__YrtEDw-Eem-JP8KvVO4dQ",
+      "__9H24Dw-Eem-JP8KvVO4dQ",
+      "_B126IDw_Eem-JP8KvVO4dQ",
+      "_CmuWYDw_Eem-JP8KvVO4dQ"
+    ],
+    "tube": [
+      "_EO2x0Dw_Eem-JP8KvVO4dQ",
+      "_FP2UwDw_Eem-JP8KvVO4dQ",
+      "_HJsyUDw_Eem-JP8KvVO4dQ"
     ]
   },
   "_lalW8DkKEemDPOVSEc-Nig": {
@@ -536,6 +656,26 @@
     "from": "_mmoH8DuqEem2adJ_qP5fgw",
     "to": "_r9XjIDuqEem2adJ_qP5fgw"
   },
+  "MainContainer-MainWindow-AppContainer": {
+    "clazz": "MasterTube",
+    "internalName": "MainContainer-MainWindow-AppContainer",
+    "name": "MainWindow",
+    "designTubes": [
+      "_wapmwDuqEem2adJ_qP5fgw"
+    ],
+    "from": "master_cell_MainContainer",
+    "to": "master_cell_AppContainer"
+  },
+  "NavigationBarComponent-Account-UserPanelContainer": {
+    "clazz": "MasterTube",
+    "internalName": "NavigationBarComponent-Account-UserPanelContainer",
+    "name": "Account",
+    "designTubes": [
+      "_0_DxYDw_Eem-JP8KvVO4dQ"
+    ],
+    "from": "master_cell_NavigationBarComponent",
+    "to": "master_cell_UserPanelContainer"
+  },
   "master_cell_LogoutComponent": {
     "clazz": "MasterCell",
     "count": 1,
@@ -551,15 +691,26 @@
       "_0vY9wDkKEemDPOVSEc-Nig"
     ]
   },
-  "_n6Bf8DueEem2adJ_qP5fgw": {
+  "RootContainer-Login-LoginComponent": {
+    "clazz": "MasterTube",
+    "internalName": "RootContainer-Login-LoginComponent",
+    "name": "Login",
+    "designTubes": [
+      "_EO2x0Dw_Eem-JP8KvVO4dQ",
+      "_edQ_cDw_Eem-JP8KvVO4dQ"
+    ],
+    "from": "master_cell_RootContainer",
+    "to": "master_cell_LoginComponent"
+  },
+  "_dtHU4Dw_Eem-JP8KvVO4dQ": {
     "clazz": "Cell",
     "count": 1,
     "external": false,
-    "name": "MainWindowComponent",
-    "input": [],
-    "output": [
-      "_mhP5sDufEem2adJ_qP5fgw"
-    ]
+    "name": "LoginComponent",
+    "input": [
+      "_edQ_cDw_Eem-JP8KvVO4dQ"
+    ],
+    "output": []
   },
   "master_cell_ButtonComponent": {
     "clazz": "MasterCell",
@@ -582,6 +733,16 @@
       "_0VjIgDboEemstOQ9crAytw"
     ]
   },
+  "_gJAvkDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "RegisterComponent",
+    "input": [
+      "_hP6GMDw_Eem-JP8KvVO4dQ"
+    ],
+    "output": []
+  },
   "master_cell_StatusComponent": {
     "clazz": "MasterCell",
     "count": 1,
@@ -596,26 +757,6 @@
     "designCells": [
       "_plaNQDuqEem2adJ_qP5fgw"
     ]
-  },
-  "_hn6BoDueEem2adJ_qP5fgw": {
-    "clazz": "Cell",
-    "count": 1,
-    "external": false,
-    "name": "NavigationBarComponent",
-    "input": [],
-    "output": [
-      "_VF9HgDufEem2adJ_qP5fgw"
-    ]
-  },
-  "_klMcsDufEem2adJ_qP5fgw": {
-    "clazz": "Cell",
-    "count": 1,
-    "external": false,
-    "name": "AppContainer",
-    "input": [
-      "_mhP5sDufEem2adJ_qP5fgw"
-    ],
-    "output": []
   },
   "master_cell_InputComponent": {
     "clazz": "MasterCell",
@@ -658,16 +799,6 @@
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_wFS0QDboEemstOQ9crAytw"
   },
-  "MainContainer-MainWindow-MainWindowComponent": {
-    "clazz": "MasterTube",
-    "internalName": "MainContainer-MainWindow-MainWindowComponent",
-    "name": "MainWindow",
-    "designTubes": [
-      "_wapmwDuqEem2adJ_qP5fgw"
-    ],
-    "from": "master_cell_MainContainer",
-    "to": "master_cell_MainWindowComponent"
-  },
   "_nRdNoDuqEem2adJ_qP5fgw": {
     "clazz": "Cell",
     "count": 1,
@@ -692,22 +823,23 @@
       "master_cell_LoginComponent",
       "master_cell_LogoutComponent",
       "master_cell_MainContainer",
-      "master_cell_MainWindowComponent",
       "master_cell_NavigationBarComponent",
       "master_cell_PasswordComponent",
       "master_cell_RegisterComponent",
+      "master_cell_RootContainer",
       "master_cell_SidePanelComponent",
-      "master_cell_StatusBarComponent",
       "master_cell_StatusComponent",
       "master_cell_UserPanelContainer"
     ],
     "tube": [
-      "MainWindowComponent-Application-AppContainer",
+      "NavigationBarComponent-Account-UserPanelContainer",
+      "RootContainer-Application-MainContainer",
       "RegisterComponent-ConfirmPassword-PasswordComponent",
       "RegisterComponent-Email-EmailComponent",
       "AppContainer-GenericList-ListComponent",
+      "RootContainer-Login-LoginComponent",
       "UserPanelContainer-Logout-LogoutComponent",
-      "MainContainer-MainWindow-MainWindowComponent",
+      "MainContainer-MainWindow-AppContainer",
       "RegisterComponent-Name-InputComponent",
       "MainContainer-Navigation-NavigationBarComponent",
       "LoginComponent-NeedHelp-LinkComponent",
@@ -715,13 +847,13 @@
       "LoginComponent-Password-PasswordComponent",
       "RegisterComponent-Register-ButtonComponent",
       "LoginComponent-Register-ButtonComponent",
+      "RootContainer-Register-RegisterComponent",
       "LoginComponent-RememberMe-CheckboxComponent",
       "MainContainer-SidePanel-SidePanelComponent",
       "RegisterComponent-SignIn-ButtonComponent",
       "LoginComponent-SignIn-ButtonComponent",
       "MainContainer-Status-StatusComponent",
-      "LoginComponent-UserName-InputComponent",
-      "NavigationBarComponent-UserPanel-UserPanelContainer"
+      "LoginComponent-UserName-InputComponent"
     ]
   },
   "_uqaRsDhIEemsh9kXpzizFw": {
@@ -762,20 +894,32 @@
     "from": "master_cell_RegisterComponent",
     "to": "master_cell_EmailComponent"
   },
-  "_jlg90DueEem2adJ_qP5fgw": {
-    "clazz": "Cell",
-    "count": 1,
-    "external": false,
-    "name": "SidePanelComponent",
-    "input": [],
-    "output": []
-  },
   "_1qc30DkKEemDPOVSEc-Nig": {
     "clazz": "Tube",
     "name": "Logout",
     "descriptor": [],
     "from": "_mvgigDkKEemDPOVSEc-Nig",
     "to": "_0vY9wDkKEemDPOVSEc-Nig"
+  },
+  "master_cell_RootContainer": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_RootContainer",
+    "name": "RootContainer",
+    "pinned": false,
+    "input": [],
+    "output": [
+      "RootContainer-Login-LoginComponent",
+      "RootContainer-Register-RegisterComponent",
+      "RootContainer-Application-MainContainer"
+    ],
+    "designCells": [
+      "__YrtEDw-Eem-JP8KvVO4dQ",
+      "_fPiJ4Dw_Eem-JP8KvVO4dQ",
+      "_dAYKsDw_Eem-JP8KvVO4dQ",
+      "_QhfoIDw_Eem-JP8KvVO4dQ"
+    ]
   },
   "_ofbEgDbnEem3lv12OZ3ZJA": {
     "clazz": "Layer",
@@ -810,14 +954,6 @@
     "input": [
       "_iInBEDnUEemDPOVSEc-Nig"
     ],
-    "output": []
-  },
-  "_mKZVYDueEem2adJ_qP5fgw": {
-    "clazz": "Cell",
-    "count": 1,
-    "external": false,
-    "name": "StatusBarComponent",
-    "input": [],
     "output": []
   },
   "_3gzzsDchEemsh9kXpzizFw": {
@@ -855,6 +991,16 @@
     "from": "master_cell_RegisterComponent",
     "to": "master_cell_InputComponent"
   },
+  "_wcaFkDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "NavigationBarComponent",
+    "input": [],
+    "output": [
+      "_0_DxYDw_Eem-JP8KvVO4dQ"
+    ]
+  },
   "_pMDEgDboEemstOQ9crAytw": {
     "clazz": "Tube",
     "name": "UserName",
@@ -873,11 +1019,11 @@
       "MainContainer-Navigation-NavigationBarComponent"
     ],
     "output": [
-      "NavigationBarComponent-UserPanel-UserPanelContainer"
+      "NavigationBarComponent-Account-UserPanelContainer"
     ],
     "designCells": [
-      "_nRdNoDuqEem2adJ_qP5fgw",
-      "_hn6BoDueEem2adJ_qP5fgw"
+      "_wcaFkDw_Eem-JP8KvVO4dQ",
+      "_nRdNoDuqEem2adJ_qP5fgw"
     ]
   },
   "_qvDScDnUEemDPOVSEc-Nig": {
@@ -896,6 +1042,13 @@
     "output": [
       "_yCIbcDhIEemsh9kXpzizFw"
     ]
+  },
+  "_SgZk0Dw_Eem-JP8KvVO4dQ": {
+    "clazz": "Tube",
+    "name": "Application",
+    "descriptor": [],
+    "from": "_QhfoIDw_Eem-JP8KvVO4dQ",
+    "to": "_RlFzIDw_Eem-JP8KvVO4dQ"
   },
   "master_cell_PasswordComponent": {
     "clazz": "MasterCell",
@@ -916,6 +1069,20 @@
       "_rqakYDboEemstOQ9crAytw"
     ]
   },
+  "_hP6GMDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Tube",
+    "name": "Register",
+    "descriptor": [],
+    "from": "_fPiJ4Dw_Eem-JP8KvVO4dQ",
+    "to": "_gJAvkDw_Eem-JP8KvVO4dQ"
+  },
+  "_EO2x0Dw_Eem-JP8KvVO4dQ": {
+    "clazz": "Tube",
+    "name": "Login",
+    "descriptor": [],
+    "from": "__YrtEDw-Eem-JP8KvVO4dQ",
+    "to": "__9H24Dw-Eem-JP8KvVO4dQ"
+  },
   "RegisterComponent-Password-PasswordComponent": {
     "clazz": "MasterTube",
     "internalName": "RegisterComponent-Password-PasswordComponent",
@@ -925,6 +1092,17 @@
     ],
     "from": "master_cell_RegisterComponent",
     "to": "master_cell_PasswordComponent"
+  },
+  "_OTm0QDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Flow",
+    "name": "LoginRoute",
+    "cell": [
+      "_dAYKsDw_Eem-JP8KvVO4dQ",
+      "_dtHU4Dw_Eem-JP8KvVO4dQ"
+    ],
+    "tube": [
+      "_edQ_cDw_Eem-JP8KvVO4dQ"
+    ]
   },
   "_wFS0QDboEemstOQ9crAytw": {
     "clazz": "Cell",
@@ -978,23 +1156,16 @@
       "_qOMBgDbpEemstOQ9crAytw"
     ]
   },
-  "master_cell_MainWindowComponent": {
-    "clazz": "MasterCell",
-    "count": 1,
-    "external": false,
-    "internalName": "master_cell_MainWindowComponent",
-    "name": "MainWindowComponent",
-    "pinned": false,
-    "input": [
-      "MainContainer-MainWindow-MainWindowComponent"
+  "RootContainer-Application-MainContainer": {
+    "clazz": "MasterTube",
+    "internalName": "RootContainer-Application-MainContainer",
+    "name": "Application",
+    "designTubes": [
+      "_HJsyUDw_Eem-JP8KvVO4dQ",
+      "_SgZk0Dw_Eem-JP8KvVO4dQ"
     ],
-    "output": [
-      "MainWindowComponent-Application-AppContainer"
-    ],
-    "designCells": [
-      "_rJpnMDuqEem2adJ_qP5fgw",
-      "_n6Bf8DueEem2adJ_qP5fgw"
-    ]
+    "from": "master_cell_RootContainer",
+    "to": "master_cell_MainContainer"
   },
   "_ZWa-gDucEemDPOVSEc-Nig": {
     "clazz": "Cell",
@@ -1012,6 +1183,17 @@
     "descriptor": [],
     "from": "_k6QfMDboEemstOQ9crAytw",
     "to": "_rqakYDboEemstOQ9crAytw"
+  },
+  "_P3r2IDw_Eem-JP8KvVO4dQ": {
+    "clazz": "Flow",
+    "name": "RegisterRoute",
+    "cell": [
+      "_fPiJ4Dw_Eem-JP8KvVO4dQ",
+      "_gJAvkDw_Eem-JP8KvVO4dQ"
+    ],
+    "tube": [
+      "_hP6GMDw_Eem-JP8KvVO4dQ"
+    ]
   },
   "_qOMBgDbpEemstOQ9crAytw": {
     "clazz": "Cell",
@@ -1042,21 +1224,7 @@
     ],
     "output": [],
     "designCells": [
-      "_r9XjIDuqEem2adJ_qP5fgw",
-      "_jlg90DueEem2adJ_qP5fgw"
-    ]
-  },
-  "master_cell_StatusBarComponent": {
-    "clazz": "MasterCell",
-    "count": 1,
-    "external": false,
-    "internalName": "master_cell_StatusBarComponent",
-    "name": "StatusBarComponent",
-    "pinned": false,
-    "input": [],
-    "output": [],
-    "designCells": [
-      "_mKZVYDueEem2adJ_qP5fgw"
+      "_r9XjIDuqEem2adJ_qP5fgw"
     ]
   },
   "master_cell_ListComponent": {

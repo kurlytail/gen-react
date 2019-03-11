@@ -55,12 +55,8 @@ info: Generated testoutput/src/js/components/PasswordComponent.jsx from template
 info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/link-component.jsx._
 info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/MainWindowComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/MainWindowComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/SidePanelComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/StatusBarComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/StatusBarComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
@@ -70,6 +66,8 @@ info: Generated testoutput/src/js/containers/AppContainer.jsx from template temp
 info: Generated testoutput/src/js/containers/__tests__/AppContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/UserPanelContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/UserPanelContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
+info: Generated testoutput/src/js/containers/RootContainer.jsx from template templates/src/js/containers/container.jsx._
+info: Generated testoutput/src/js/containers/__tests__/RootContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/index.js from template templates/src/js/containers/index.js._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
 info: Committed generated files
@@ -136,12 +134,8 @@ info: Generated testoutput/src/js/components/PasswordComponent.jsx from template
 info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/link-component.jsx._
 info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/MainWindowComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/MainWindowComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/SidePanelComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/StatusBarComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/StatusBarComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
@@ -151,6 +145,8 @@ info: Generated testoutput/src/js/containers/AppContainer.jsx from template temp
 info: Generated testoutput/src/js/containers/__tests__/AppContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/UserPanelContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/UserPanelContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
+info: Generated testoutput/src/js/containers/RootContainer.jsx from template templates/src/js/containers/container.jsx._
+info: Generated testoutput/src/js/containers/__tests__/RootContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/index.js from template templates/src/js/containers/index.js._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
 info: Committed generated files
@@ -219,12 +215,8 @@ info: Generated testoutput/src/js/components/PasswordComponent.jsx from template
 info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/link-component.jsx._
 info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/MainWindowComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/MainWindowComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/SidePanelComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/StatusBarComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/StatusBarComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
@@ -234,6 +226,8 @@ info: Generated testoutput/src/js/containers/AppContainer.jsx from template temp
 info: Generated testoutput/src/js/containers/__tests__/AppContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/UserPanelContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/UserPanelContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
+info: Generated testoutput/src/js/containers/RootContainer.jsx from template templates/src/js/containers/container.jsx._
+info: Generated testoutput/src/js/containers/__tests__/RootContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/index.js from template templates/src/js/containers/index.js._
 info: loading extension templates/addons/bootstrap4/html-jst._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
@@ -301,12 +295,8 @@ info: Generated testoutput/src/js/components/PasswordComponent.jsx from template
 info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/link-component.jsx._
 info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/MainWindowComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/MainWindowComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/SidePanelComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/StatusBarComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/StatusBarComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
@@ -316,6 +306,8 @@ info: Generated testoutput/src/js/containers/AppContainer.jsx from template temp
 info: Generated testoutput/src/js/containers/__tests__/AppContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/UserPanelContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/UserPanelContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
+info: Generated testoutput/src/js/containers/RootContainer.jsx from template templates/src/js/containers/container.jsx._
+info: Generated testoutput/src/js/containers/__tests__/RootContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/index.js from template templates/src/js/containers/index.js._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
 info: Committed generated files
@@ -385,12 +377,8 @@ info: Generated testoutput/src/js/components/PasswordComponent.jsx from template
 info: Generated testoutput/src/js/components/__tests__/PasswordComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/LinkComponent.jsx from template templates/src/js/components/link-component.jsx._
 info: Generated testoutput/src/js/components/__tests__/LinkComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/MainWindowComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/MainWindowComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/SidePanelComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
-info: Generated testoutput/src/js/components/StatusBarComponent.jsx from template templates/src/js/components/component.jsx._
-info: Generated testoutput/src/js/components/__tests__/StatusBarComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
@@ -400,6 +388,8 @@ info: Generated testoutput/src/js/containers/AppContainer.jsx from template temp
 info: Generated testoutput/src/js/containers/__tests__/AppContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/UserPanelContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/UserPanelContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
+info: Generated testoutput/src/js/containers/RootContainer.jsx from template templates/src/js/containers/container.jsx._
+info: Generated testoutput/src/js/containers/__tests__/RootContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/index.js from template templates/src/js/containers/index.js._
 info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
 warn: Checkout branch master-sgen-generated

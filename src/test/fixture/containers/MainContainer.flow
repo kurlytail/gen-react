@@ -4,7 +4,7 @@
     <cell xmi:type="flow:Cell" xmi:id="_mmoH8DuqEem2adJ_qP5fgw" output="_uj_AEDuqEem2adJ_qP5fgw _vYAeADuqEem2adJ_qP5fgw _wapmwDuqEem2adJ_qP5fgw _xUc8kDuqEem2adJ_qP5fgw" name="MainContainer"/>
     <cell xmi:type="flow:Cell" xmi:id="_nRdNoDuqEem2adJ_qP5fgw" input="_uj_AEDuqEem2adJ_qP5fgw" name="NavigationBarComponent"/>
     <cell xmi:type="flow:Cell" xmi:id="_plaNQDuqEem2adJ_qP5fgw" input="_vYAeADuqEem2adJ_qP5fgw" name="StatusComponent"/>
-    <cell xmi:type="flow:Cell" xmi:id="_rJpnMDuqEem2adJ_qP5fgw" input="_wapmwDuqEem2adJ_qP5fgw" name="MainWindowComponent"/>
+    <cell xmi:type="flow:Cell" xmi:id="_rJpnMDuqEem2adJ_qP5fgw" input="_wapmwDuqEem2adJ_qP5fgw" name="AppContainer"/>
     <cell xmi:type="flow:Cell" xmi:id="_r9XjIDuqEem2adJ_qP5fgw" input="_xUc8kDuqEem2adJ_qP5fgw" name="SidePanelComponent"/>
     <tube xmi:type="flow:Tube" xmi:id="_uj_AEDuqEem2adJ_qP5fgw" from="_mmoH8DuqEem2adJ_qP5fgw" name="Navigation" to="_nRdNoDuqEem2adJ_qP5fgw"/>
     <tube xmi:type="flow:Tube" xmi:id="_vYAeADuqEem2adJ_qP5fgw" from="_mmoH8DuqEem2adJ_qP5fgw" name="Status" to="_plaNQDuqEem2adJ_qP5fgw"/>

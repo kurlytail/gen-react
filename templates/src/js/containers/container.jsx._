@@ -9,6 +9,12 @@ const importContainers = _.union(_.pluck(cell.output, 'to')
     .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
 %>
 import React, { Component } from 'react';
+<%if (className === 'RootContainer') {%>
+import {
+  BrowserRouter as Router
+} from 'react-router-dom';
+<%}%>
+import { Route } from 'react-router-dom';
 <%if (importComponents.length !== 0) {%>
 import {<%=importComponents.join(',')%>} from '../components';
 <%}%>
@@ -22,18 +28,30 @@ import <%=name%> from './<%=name%>';
 
 class <%=className%> extends Component {
     render() {
-        return <div <%=extension('react-tag.*', 'container-attributes').join(' ')%>>
+        const Container = <div <%=extension('react-tag.*', 'container-attributes').join(' ')%>>
 <%
 cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
     .forEach(tube => {
-    const component = tube.to;
-    const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
+        const component = tube.to;
+        const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
+        const routes = design.Flow.filter(f => f.name.endsWith('Route') && _.intersection(f.tube, tube.designTubes).length !== 0);
 %>
+<%      if (routes.length !== 0) {%>
+<%          routes.forEach(route => {%>
+            <Route path={'<%=route.name%>'} component={<%=componentClassName%>} />
+<%          });%>
+<%      } else {%>
             <<%=componentClassName%> label='<%=tube.name%>'/>
-<%
-});
-%>
+<%      }%>
+<%  });%>
         </div>;
+<%if (className === 'RootContainer') {%>
+        return <Router>
+            {Container}
+        </Router>;
+<%} else {%>
+        return Container;
+<%}%>
     }
 }
 

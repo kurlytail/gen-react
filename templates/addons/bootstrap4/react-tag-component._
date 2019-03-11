@@ -14,6 +14,14 @@ className={'form-control'}
     <%} else if (labels.includes('input-label-attributes')) {%>
 className={'form-label'}
     <%}%>
+<%} else if (context === 'EmailComponent') { %>
+    <%if (labels.includes('email-div-attributes')) {%>
+className={'form-group'}
+    <%} else if (labels.includes('email-attributes')) {%>
+className={'form-control'}
+    <%} else if (labels.includes('email-label-attributes')) {%>
+className={'form-label'}
+    <%}%>
 <%} else if (context === 'ButtonComponent') { %>
 className={'btn'}
 <%} else if (context === 'LinkComponent') { %>

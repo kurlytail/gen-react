@@ -1,0 +1,16 @@
+<%
+const cell = design.MasterCell.find(cell => cell.name === context);
+%>
+
+<div <%=extension('react-tag.*', 'container-attributes').join(' ')%>>
+<%
+cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
+    .forEach(tube => {
+    const component = tube.to;
+    const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
+%>
+            <<%=componentClassName%> label='<%=tube.name%>'/>
+<%
+});
+%>
+</div>
