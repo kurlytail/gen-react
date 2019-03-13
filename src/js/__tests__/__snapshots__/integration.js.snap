@@ -30,6 +30,7 @@ info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/web
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/.flowconfig from template node_modules/@kurlytail/gen-npm/templates/.flowconfig._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Generated testoutput/src/js/index.jsx from template templates/src/js/index.jsx._
 info: loading extension templates/extensions/react-tag-component._
@@ -109,6 +110,7 @@ info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/web
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/.flowconfig from template node_modules/@kurlytail/gen-npm/templates/.flowconfig._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Generated testoutput/src/js/index.jsx from template templates/src/js/index.jsx._
 info: loading extension templates/extensions/react-tag-component._
@@ -188,6 +190,7 @@ info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/web
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/.flowconfig from template node_modules/@kurlytail/gen-npm/templates/.flowconfig._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Generated testoutput/src/js/index.jsx from template templates/src/js/index.jsx._
 info: loading extension templates/addons/bootstrap4/react-tag-container._
@@ -270,6 +273,7 @@ info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/web
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/.flowconfig from template node_modules/@kurlytail/gen-npm/templates/.flowconfig._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Generated testoutput/src/js/index.jsx from template templates/src/js/index.jsx._
 info: loading extension templates/extensions/react-tag-component._
@@ -352,6 +356,7 @@ info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/web
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
+info: Generated testoutput/.flowconfig from template node_modules/@kurlytail/gen-npm/templates/.flowconfig._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Generated testoutput/src/js/index.jsx from template templates/src/js/index.jsx._
 info: loading extension templates/extensions/react-tag-component._
