@@ -61,6 +61,10 @@ info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx fr
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
+info: loading extension templates/extensions/react-container-import-router._
+info: loading extension templates/extensions/react-container-import-containers._
+info: loading extension templates/extensions/react-container-import-components._
+info: loading extension templates/extensions/react-container-import-base._
 info: Generated testoutput/src/js/containers/MainContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/MainContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/AppContainer.jsx from template templates/src/js/containers/container.jsx._
@@ -141,6 +145,10 @@ info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx fr
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
+info: loading extension templates/extensions/react-container-import-router._
+info: loading extension templates/extensions/react-container-import-containers._
+info: loading extension templates/extensions/react-container-import-components._
+info: loading extension templates/extensions/react-container-import-base._
 info: Generated testoutput/src/js/containers/MainContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/MainContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/AppContainer.jsx from template templates/src/js/containers/container.jsx._
@@ -223,6 +231,10 @@ info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx fr
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
+info: loading extension templates/extensions/react-container-import-router._
+info: loading extension templates/extensions/react-container-import-containers._
+info: loading extension templates/extensions/react-container-import-components._
+info: loading extension templates/extensions/react-container-import-base._
 info: Generated testoutput/src/js/containers/MainContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/MainContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/AppContainer.jsx from template templates/src/js/containers/container.jsx._
@@ -304,6 +316,10 @@ info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx fr
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
+info: loading extension templates/extensions/react-container-import-router._
+info: loading extension templates/extensions/react-container-import-containers._
+info: loading extension templates/extensions/react-container-import-components._
+info: loading extension templates/extensions/react-container-import-base._
 info: Generated testoutput/src/js/containers/MainContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/MainContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/AppContainer.jsx from template templates/src/js/containers/container.jsx._
@@ -387,6 +403,10 @@ info: Generated testoutput/src/js/components/__tests__/SidePanelComponent.jsx fr
 info: Generated testoutput/src/js/components/ListComponent.jsx from template templates/src/js/components/component.jsx._
 info: Generated testoutput/src/js/components/__tests__/ListComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
 info: Generated testoutput/src/js/components/index.js from template templates/src/js/components/index.js._
+info: loading extension templates/extensions/react-container-import-router._
+info: loading extension templates/extensions/react-container-import-containers._
+info: loading extension templates/extensions/react-container-import-components._
+info: loading extension templates/extensions/react-container-import-base._
 info: Generated testoutput/src/js/containers/MainContainer.jsx from template templates/src/js/containers/container.jsx._
 info: Generated testoutput/src/js/containers/__tests__/MainContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
 info: Generated testoutput/src/js/containers/AppContainer.jsx from template templates/src/js/containers/container.jsx._

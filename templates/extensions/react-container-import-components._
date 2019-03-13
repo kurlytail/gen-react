@@ -1,0 +1,9 @@
+<%
+const cell = design.MasterCell.find(cell => cell.name === context);
+const importComponents = _.union(_.pluck(cell.output, 'to')
+    .filter(cell => cell.name.endsWith('Component'))
+    .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
+%>
+<%if (importComponents.length !== 0) {%>
+import {<%=importComponents.join(',')%>} from '../components';
+<%}%>

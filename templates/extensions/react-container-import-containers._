@@ -1,0 +1,13 @@
+<%
+const cell = design.MasterCell.find(cell => cell.name === context);
+const importContainers = _.union(_.pluck(cell.output, 'to')
+    .filter(cell => cell.name.endsWith('Container'))
+    .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
+%>
+<%
+importContainers.forEach(name => {
+%>
+import <%=name%> from './<%=name%>';
+<%
+});
+%>

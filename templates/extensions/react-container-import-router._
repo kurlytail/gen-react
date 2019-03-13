@@ -1,0 +1,14 @@
+<%
+const cell = design.MasterCell.find(cell => cell.name === context);
+const className = lodash.upperFirst(lodash.camelCase(cell.name));
+const hasRoute = cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
+    .reduce((hasRoute, tube) => {
+        const routes = design.Flow.filter(f => f.name.endsWith('Route') && _.intersection(f.tube, tube.designTubes).length !== 0);
+        return routes.length !== 0 || hasRoute;
+    }, false);
+if (className === 'RootContainer') {%>
+import {
+  BrowserRouter as Router
+} from 'react-router-dom';
+<%}
+if (hasRoute) { %>import { Route } from 'react-router-dom';<%}%>
