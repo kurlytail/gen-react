@@ -1,7 +1,7 @@
 <%
 const cell = design.MasterCell.find(cell => cell.name === context);
 const className = lodash.upperFirst(lodash.camelCase(cell.name));
-const importComponents = _.union(_.pluck(cell.output, 'to')
+const importComponents = _.union(_.pluck(cell.input, 'from')
     .filter(cell => cell.name.endsWith('Component'))
     .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
 %>
@@ -23,9 +23,9 @@ class <%=className%> extends Component {
             </header>
             <div <%=extension('react-tag.*', 'component-body-attributes').join(' ')%>>
 <%
-cell.output.filter(tube => tube.to.name.endsWith('Component'))
+cell.input.filter(tube => tube.from.name.endsWith('Component'))
     .forEach(tube => {
-    const component = tube.to;
+    const component = tube.from;
     const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
 %>
             <<%=componentClassName%> label='<%=tube.name%>'/>

@@ -8,9 +8,9 @@ class <%=className%> extends Component {
     render() {
         const Container = <div <%=extension('react-tag.*', 'container-attributes').join(' ')%>>
 <%
-cell.output.filter(tube => tube.to.name.endsWith('Component') || tube.to.name.endsWith('Container'))
+cell.input.filter(tube => tube.from.name.endsWith('Component') || tube.from.name.endsWith('Container'))
     .forEach(tube => {
-        const component = tube.to;
+        const component = tube.from;
         const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
         const routes = design.Flow.filter(f => f.name.endsWith('Route') && _.intersection(f.tube, tube.designTubes).length !== 0);
 %>
