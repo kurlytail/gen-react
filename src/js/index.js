@@ -13,7 +13,9 @@ if (!baseModule) {
 const options = {
     // eslint-disable-next-line no-undef
     version: app.version,
-    map: [`${basePath}/templates/map.json`]
+    map: [`${basePath}/templates/map.json`],
+    extension: [`${basePath}/templates/extensions`],
+    generator: ['npm']
 };
 
 export default options;
