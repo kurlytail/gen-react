@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "main": "dist/react.min.js",
     "devDependencies": {
-        "@kurlytail/gen-sgen": "1.0.6",
+        "@kurlytail/gen-sgen": "1.0.8",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-eslint": "^8.0.1",
@@ -67,7 +67,7 @@
         "clean": "rimraf ./docs ./dist ./coverage test-report.xml"
     },
     "dependencies": {
-        "@kurlytail/gen-lib": "1.0.7",
+        "@kurlytail/gen-lib": "1.0.8",
         "@kurlytail/gen-npm": "1.0.1"
     }
 }
