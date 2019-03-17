@@ -2,6 +2,7 @@
     "name": "@kurlytail/gen-react",
     "description": "REACT project generator",
     "version": "0.0.1",
+    "main": "dist/react.min.js",
     "devDependencies": {
         "@kurlytail/gen-sgen": "1.0.6",
         "babel-cli": "^6.26.0",
@@ -16,6 +17,7 @@
         "babel-preset-flow": "^6.23.0",
         "babel-register": "^6.26.0",
         "child_process": "^1.0.2",
+        "circular-dependency-plugin": "^4.2.1",
         "eslint": "^4.19.1",
         "eslint-config-prettier": "^2.6.0",
         "eslint-import-resolver-babel-module": "^4.0.0",
@@ -29,7 +31,10 @@
         "jest": "^23.6.0",
         "jest-junit-reporter": "^1.1.0",
         "jsdoc": "^3.5.5",
-        "prettier": "^1.16.0"
+        "prettier": "^1.16.0",
+        "source-map-loader": "^0.2.3",
+        "webpack": "^3.5.5",
+        "webpack-node-externals": "^1.7.2"
     },
     "license": "UNLICENSED",
     "jest": {
@@ -54,6 +59,7 @@
     },
     "scripts": {
         "docs": "jsdoc -c jsdoc.json && npx opn-cli ./docs/index.html",
+        "build": "NODE_ENV=\"debug\" webpack --display-modules --display-reasons",
         "lint": "eslint src",
         "test": "jest tests",
         "test:watch": "jest --watch tests",
@@ -63,8 +69,5 @@
     "dependencies": {
         "@kurlytail/gen-lib": "1.0.7",
         "@kurlytail/gen-npm": "1.0.1"
-    },
-    "bin": {
-        "sgen-react": "scripts/sgen-react.sh"
     }
 }

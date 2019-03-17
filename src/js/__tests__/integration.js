@@ -6,24 +6,15 @@ describe('# integration test', () => {
     });
 
     it('## should print help options', () => {
-        const output = execSync('./scripts/sgen-react.sh -h').toString();
+        let output = execSync('npm run build').toString();
+        output = execSync('sgen -g `pwd`/dist/react.min.js -h').toString();
         expect(output).toMatchSnapshot();
     });
 
-    it('## should generate design', () => {
-        const output = execSync('./scripts/sgen-react.sh -d src/test/fixture/design.json -o testoutput').toString();
-        expect(output).toMatchSnapshot();
-    });
-
-    it('## should generate design with merge', () => {
-        let output = execSync('./scripts/sgen-react.sh -d src/test/fixture/design.json -o testoutput').toString();
-        expect(output).toMatchSnapshot();
-        output = execSync('./scripts/sgen-react.sh -d src/test/fixture/design.json -o testoutput').toString();
-        expect(output).toMatchSnapshot();
-    });
-
-    it('## should generate design and run npm commands', () => {
-        let output = execSync('./scripts/sgen-react.sh -d src/test/fixture/design.json -o testoutput').toString();
+    it('## should generate design and run react commands', () => {
+        let output = execSync('npm run build').toString();
+        output = execSync('sgen -g `pwd`/dist/react.min.js -d src/test/fixture/design.json -o testoutput').toString();
+        output = output.replace(/info: Loaded generator .*react.min.js.*/, '');
         expect(output).toMatchSnapshot();
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
@@ -32,8 +23,9 @@ describe('# integration test', () => {
     });
 
     it('## should generate design with bootstrap extensions and run npm commands', () => {
+        let output = execSync('npm run build').toString();
         let output = execSync(
-            './scripts/sgen-react.sh -e templates/addons/bootstrap4 -d src/test/fixture/design.json -o testoutput'
+            'sgen -g `pwd`/dist/react.min.js -e templates/addons/bootstrap4 -d src/test/fixture/design.json -o testoutput'
         ).toString();
         expect(output).toMatchSnapshot();
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
