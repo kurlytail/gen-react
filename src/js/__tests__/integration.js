@@ -21,17 +21,4 @@ describe('# integration test', () => {
         output = execSync('npm run build', { cwd: 'testoutput' }).toString();
         output = execSync('npm test -- -u --projects testoutput').toString();
     });
-
-    it('## should generate design with bootstrap extensions and run npm commands', () => {
-        let output = execSync('npm run build').toString();
-        output = execSync(
-            'sgen -g `pwd`/dist/react.min.js -e templates/addons/bootstrap4 -d src/test/fixture/design.json -o testoutput'
-        ).toString();
-        output = output.replace(/info: Loaded generator .*react.min.js.*/, '');
-        expect(output).toMatchSnapshot();
-        output = execSync('npm install', { cwd: 'testoutput' }).toString();
-        output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
-        output = execSync('npm run build', { cwd: 'testoutput' }).toString();
-        output = execSync('npm test -- -u --projects testoutput').toString();
-    });
 });
