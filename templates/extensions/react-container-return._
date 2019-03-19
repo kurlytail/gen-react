@@ -1,0 +1,11 @@
+<%
+const cell = design.MasterCell.find(cell => cell.name === context);
+const className = lodash.upperFirst(lodash.camelCase(cell.name));
+%>
+<%if (className === 'RootContainer') {%>
+    <Router>
+        {Container}
+    </Router>;
+<%} else {%>
+    Container;
+<%}%>

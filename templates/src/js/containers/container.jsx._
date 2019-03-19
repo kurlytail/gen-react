@@ -7,29 +7,9 @@ const className = lodash.upperFirst(lodash.camelCase(cell.name));
 class <%=className%> extends Component {
     render() {
         const Container = <div <%=extension('react-tag.*', 'container-attributes').join(' ')%>>
-<%
-cell.input.filter(tube => tube.from.name.endsWith('Component') || tube.from.name.endsWith('Container'))
-    .forEach(tube => {
-        const component = tube.from;
-        const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
-        const routes = design.Flow.filter(f => f.name.endsWith('Route') && _.intersection(f.tube, tube.designTubes).length !== 0);
-%>
-<%      if (routes.length !== 0) {%>
-<%          routes.forEach(route => {%>
-            <Route path={'<%=route.name%>'} component={<%=componentClassName%>} />
-<%          });%>
-<%      } else {%>
-            <<%=componentClassName%> label='<%=tube.name%>'/>
-<%      }%>
-<%  });%>
+            <%=extension('react-container-children')[0].trim()%>
         </div>;
-<%if (className === 'RootContainer') {%>
-        return <Router>
-            {Container}
-        </Router>;
-<%} else {%>
-        return Container;
-<%}%>
+        return <%=extension('react-container-return')[0].trim()%>;
     }
 }
 
