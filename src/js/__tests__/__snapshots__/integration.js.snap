@@ -68,22 +68,8 @@ info: loading extension templates/extensions/react-container-import-containers._
 info: loading extension templates/extensions/react-container-import-components._
 info: loading extension templates/extensions/react-container-import-base._
 info: loading extension templates/extensions/react-container-children._
-info: loading extension templates/extensions/react-container-return._
-info: Generated testoutput/src/js/containers/MainContainer.jsx from template templates/src/js/containers/container.jsx._
-info: Generated testoutput/src/js/containers/__tests__/MainContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
-info: Generated testoutput/src/js/containers/AppContainer.jsx from template templates/src/js/containers/container.jsx._
-info: Generated testoutput/src/js/containers/__tests__/AppContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
-info: Generated testoutput/src/js/containers/UserPanelContainer.jsx from template templates/src/js/containers/container.jsx._
-info: Generated testoutput/src/js/containers/__tests__/UserPanelContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
-info: Generated testoutput/src/js/containers/RootContainer.jsx from template templates/src/js/containers/container.jsx._
-info: Generated testoutput/src/js/containers/__tests__/RootContainer.jsx from template templates/src/js/containers/__tests__/container.jsx._
-info: Generated testoutput/src/js/containers/index.js from template templates/src/js/containers/index.js._
-info: Generated testoutput/src/js/html.jst from template templates/src/js/html.jst._
-info: Committed generated files
-info: Attempting to use branch master-sgen-generated
-info: Creating new branch master-sgen-generated
-warn: Checkout branch master
-warn: Checkout branch master
+error: Maximum call stack size exceeded
+warn: Attempting to cleanup on error
 info: sgen is done
 "
 `;

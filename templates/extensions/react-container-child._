@@ -2,19 +2,20 @@
 const cell = design.MasterCell.find(cell => cell.name === context);
 const className = lodash.upperFirst(lodash.camelCase(cell.name));
 const tubeId = labels.slice(-1)[0];
-const tube = cell.input.find(tube => tube._id === tubeId);
+const tube = cell.input.find(tube => tube.internalName === tubeId);
 
 if (tube.from.name.endsWith('Component') || tube.from.name.endsWith('Container')) {
     const component = tube.from;
     const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
     const routes = design.Flow.filter(f => f.name.endsWith('Route') && _.intersection(f.tube, tube.designTubes).length !== 0);
+    if (routes.length !== 0) {
+        routes.forEach(route => {
+            const routeName = route.name === 'DefaultRoute' ? '*' : route.name;
 %>
-<%      if (routes.length !== 0) {%>
-<%          routes.forEach(route => {%>
-            <Route path={'<%=route.name%>'} component={<%=componentClassName%>} />
-<%          });%>
-<%      } else {%>
-            <<%=componentClassName%> label='<%=tube.name%>'/>
-<%      }%>
+<Route path={'<%=routeName%>'} component={<%=componentClassName%>} />
+<%          });
+    } else {%>
+<<%=componentClassName%> label='<%=tube.name%>'/>
+<%   }
 }
 %>

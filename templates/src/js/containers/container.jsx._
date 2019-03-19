@@ -7,7 +7,7 @@ const className = lodash.upperFirst(lodash.camelCase(cell.name));
 class <%=className%> extends Component {
     render() {
         const Container = <div <%=extension('react-tag.*', 'container-attributes').join(' ')%>>
-            <%=extension('react-container-children')[0].trim()%>
+            <%=extension('react-container-children$')[0].trim()%>
         </div>;
         return <%=extension('react-container-return')[0].trim()%>;
     }
