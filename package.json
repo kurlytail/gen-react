@@ -1,7 +1,7 @@
 {
     "name": "@kurlytail/gen-react",
     "description": "REACT project generator",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "main": "dist/react.min.js",
     "devDependencies": {
         "@kurlytail/gen-log": "^1.1.5",
