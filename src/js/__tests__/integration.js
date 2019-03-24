@@ -19,6 +19,6 @@ describe('# integration test', () => {
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
         output = execSync('npm run build', { cwd: 'testoutput' }).toString();
-        output = execSync('npm test -- -u --projects testoutput').toString();
+        output = execSync('npm test -- -u', { cwd: 'testoutput' }).toString();
     });
 });

@@ -73,6 +73,6 @@
     },
     "dependencies": {
         "@kurlytail/gen-lib": "^1.2.9",
-        "@kurlytail/gen-npm": "^1.2.1"
+        "@kurlytail/gen-npm": "^1.2.2"
     }
 }
