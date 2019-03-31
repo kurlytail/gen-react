@@ -35,6 +35,8 @@ info: Generated testoutput/src/js/__tests__/integration.js from template node_mo
 info: Generated testoutput/.flowconfig from template node_modules/@kurlytail/gen-npm/templates/.flowconfig._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Generated testoutput/src/js/index.jsx from template templates/src/js/index.jsx._
+info: loading extension templates/extensions/react-component-import-components._
+info: loading extension templates/extensions/react-component-import-base._
 info: loading extension templates/extensions/react-tag-component._
 info: Generated testoutput/src/js/components/CheckboxComponent.jsx from template templates/src/js/components/checkbox-component.jsx._
 info: Generated testoutput/src/js/components/__tests__/CheckboxComponent.jsx from template templates/src/js/components/__tests__/component.jsx._

@@ -1,19 +1,9 @@
 <%
 const cell = design.MasterCell.find(cell => cell.name === context);
 const className = lodash.upperFirst(lodash.camelCase(cell.name));
-const importComponents = _.union(_.pluck(cell.input, 'from')
-    .filter(cell => cell.name.endsWith('Component'))
-    .map(cell => lodash.upperFirst(lodash.camelCase(cell.name))));
 %>
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-<%
-importComponents.forEach(name => {
-%>
-import <%=name%> from './<%=name%>';
-<%
-});
-%>
+
+<%=extension('react-component-import-.*').join('')%>
 
 class <%=className%> extends Component {
     render() {

@@ -2,13 +2,11 @@
 const cell = design.MasterCell.find(cell => cell.name === context);
 const className = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import lodash from 'lodash';
+<%=extension('react-component-import-.*').join('')%>
 
 class <%=className%> extends Component {
     render() {
-        return <button type={'button'} <%=extension('react-tag.*', 'component-attributes').join(' ')%>>
+        return <button type={'button'} <%=extension('react-tag-.*', 'component-attributes').join(' ')%>>
             {lodash.startCase(this.props.label)}
         </button>;
     }

@@ -2,7 +2,7 @@
 const cell = design.MasterCell.find(cell => cell.name === context);
 const className = lodash.upperFirst(lodash.camelCase(cell.name));
 %>
-<%=extension('react-container-import-.*').map(t => t.trim()).filter(v => v != '').join('')%>
+<%=extension('react-container-import-.*').join('')%>
 
 class <%=className%> extends Component {
     render() {

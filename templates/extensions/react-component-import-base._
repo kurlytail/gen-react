@@ -1,0 +1,15 @@
+<%
+const cell = design.MasterCell.find(cell => cell.name === context);
+const className = lodash.upperFirst(lodash.camelCase(cell.name));
+%>
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+<% if (['ButtonComponent',
+        'CheckboxComponent',
+        'EmailComponent',
+        'InputComponent',
+        'LinkComponent',
+        'PasswordComponent'].includes(className)) { %>
+import lodash from 'lodash';
+<% } %>
+<%=extension('react-tag-.*', 'component-imports').join('')%>
