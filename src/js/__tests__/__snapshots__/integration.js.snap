@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`# integration test ## should generate design and run react commands 1`] = `
-"info: Loaded generator @kurlytail/gen-npm@1.2.2
+"info: Loaded generator @kurlytail/gen-npm@1.2.3
 
 info: loading map node_modules/@kurlytail/gen-npm/templates/map.json
 info: loading map templates/map.json
@@ -30,7 +30,7 @@ info: loading extension templates/extensions/webpack-config._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/webpack-config._
 info: loading extension node_modules/@kurlytail/gen-npm/templates/extensions/webpack-config-1._
 info: Generated testoutput/webpack.config.js from template node_modules/@kurlytail/gen-npm/templates/webpack.config.js._
-info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/index.js._
+info: Generated testoutput/src/js/index.js from template node_modules/@kurlytail/gen-npm/templates/src/js/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template node_modules/@kurlytail/gen-npm/templates/integration.js._
 info: Generated testoutput/.flowconfig from template node_modules/@kurlytail/gen-npm/templates/.flowconfig._
 info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
