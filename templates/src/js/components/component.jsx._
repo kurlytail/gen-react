@@ -12,16 +12,7 @@ class <%=className%> extends Component {
                 <h2>{this.props.label}</h2>
             </header>
             <div <%=extension('react-tag.*', 'component-body-attributes').join(' ')%>>
-<%
-cell.input.filter(tube => tube.from.name.endsWith('Component'))
-    .forEach(tube => {
-    const component = tube.from;
-    const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
-%>
-            <<%=componentClassName%> label='<%=tube.name%>'/>
-<%
-});
-%>
+                <%=extension('react-component-children$')[0].trim()%>
             </div>
         </section>;
     }

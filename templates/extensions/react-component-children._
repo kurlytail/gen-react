@@ -1,0 +1,12 @@
+<%
+const cell = design.MasterCell.find(cell => cell.name === context);
+%>
+
+<%
+cell.input.filter(tube => tube.from.name.endsWith('Component'))
+    .forEach(tube => {
+%>
+<%=extension('react-component-child$', undefined, { tube })[0].trim()%>
+<%
+});
+%>
