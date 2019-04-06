@@ -12,10 +12,12 @@ if (tube.from.name.endsWith('Component') || tube.from.name.endsWith('Container')
         routes.forEach(route => {
             const routeName = route.name === 'DefaultRoute' ? '*' : route.name;
 %>
-<Route path={'<%=routeName%>'} component={<%=componentClassName%>} />
+<Route path={'<%=routeName.replace(/Route$/,'')%>'}
+    render={(props) => <<%=componentClassName%> {...props} <%=extension('react-tag.*', 'container-child-attributes').join(' ')%>/>} />
 <%          });
     } else {%>
-<<%=componentClassName%> label='<%=tube.name%>'/>
+<<%=componentClassName%> label='<%=tube.name%>'
+    <%=extension('react-tag.*', 'container-child-attributes').join(' ')%>/>
 <%   }
 }
 %>
