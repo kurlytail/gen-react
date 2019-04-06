@@ -1,8 +1,7 @@
 <%
 const cell = design.MasterCell.find(cell => cell.name === context);
 const className = lodash.upperFirst(lodash.camelCase(cell.name));
-const tubeId = labels.slice(-1)[0];
-const tube = cell.input.find(tube => tube.internalName === tubeId);
+const tube = args.tube;
 
 if (tube.from.name.endsWith('Component') || tube.from.name.endsWith('Container')) {
     const component = tube.from;
@@ -13,11 +12,11 @@ if (tube.from.name.endsWith('Component') || tube.from.name.endsWith('Container')
             const routeName = route.name === 'DefaultRoute' ? '*' : route.name;
 %>
 <Route path={'<%=routeName.replace(/Route$/,'')%>'}
-    render={(props) => <<%=componentClassName%> {...props} <%=extension('react-tag.*', 'container-child-attributes').join(' ')%>/>} />
+    render={(props) => <<%=componentClassName%> {...props} <%=extension('react-tag.*', 'container-child-attributes', args).join(' ')%>/>} />
 <%          });
     } else {%>
 <<%=componentClassName%> label='<%=tube.name%>'
-    <%=extension('react-tag.*', 'container-child-attributes').join(' ')%>/>
+    <%=extension('react-tag.*', 'container-child-attributes', args).join(' ')%>/>
 <%   }
 }
 %>

@@ -3,4 +3,4 @@
     const componentClassName = lodash.upperFirst(lodash.camelCase(component.name));
 %>
 <<%=componentClassName%> label='<%=args.tube.name%>'
-    <%=extension('react-tag.*', 'component-child-attributes').join(' ')%> />
+    <%=extension('react-tag.*', 'component-child-attributes', args).join(' ')%> />

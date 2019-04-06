@@ -2,5 +2,5 @@
 const cell = design.MasterCell.find(cell => cell.name === context);
 const className = lodash.upperFirst(lodash.camelCase(cell.name));
 cell.input.forEach(tube => {%>
-    <%=extension('^react-container-child$', tube.internalName)[0].trim()%>
+    <%=extension('^react-container-child$', tube.internalName, { tube })[0].trim()%>
 <%});%>
