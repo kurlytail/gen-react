@@ -6,10 +6,10 @@ const className = lodash.upperFirst(lodash.camelCase(cell.name));
 
 class <%=className%> extends Component {
     render() {
-        const Container = <div <%=extension('react-tag.*', 'container-attributes').join(' ')%>>
-            <%=extension('react-container-children$')[0].trim()%>
+        const Container = <div <%=extension('react-tag.*', 'container-attributes', { cell }).join(' ')%>>
+            <%=extension('react-container-children$', undefined, { cell })[0].trim()%>
         </div>;
-        return <%=extension('react-container-return')[0].trim()%>;
+        return <%=extension('react-container-return', undefined, { cell })[0].trim()%>;
     }
 }
 

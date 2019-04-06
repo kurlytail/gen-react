@@ -6,9 +6,9 @@ const className = lodash.upperFirst(lodash.camelCase(cell.name));
 
 class <%=className%> extends Component {
     render() {
-        return <div <%=extension('react-tag.*', 'checkbox-div-attributes').join(' ')%>>
-            <input type={'checkbox'} name={this.props.label} <%=extension('react-tag.*', 'checkbox-attributes').join(' ')%>/>
-            <label htmlFor={this.props.label} <%=extension('react-tag.*', 'checkbox-label-attributes').join(' ')%>>
+        return <div <%=extension('react-tag.*', 'component-attributes', { cell }).join(' ')%>>
+            <input type={'checkbox'} name={this.props.label} <%=extension('react-tag.*', 'component-input-attributes', { cell }).join(' ')%>/>
+            <label htmlFor={this.props.label} <%=extension('react-tag.*', 'component-label-attributes', { cell }).join(' ')%>>
                 {lodash.startCase(this.props.label)}
             </label>
         </div>

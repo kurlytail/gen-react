@@ -7,12 +7,12 @@ const className = lodash.upperFirst(lodash.camelCase(cell.name));
 
 class <%=className%> extends Component {
     render() {
-        return <section <%=extension('react-tag.*', 'component-attributes').join(' ')%>>
-            <header <%=extension('react-tag.*', 'component-header-attributes').join(' ')%>>
+        return <section <%=extension('react-tag.*', 'component-attributes', { cell }).join(' ')%>>
+            <header <%=extension('react-tag.*', 'component-header-attributes', { cell }).join(' ')%>>
                 <h2>{this.props.label}</h2>
             </header>
-            <div <%=extension('react-tag.*', 'component-body-attributes').join(' ')%>>
-                <%=extension('react-component-children$')[0].trim()%>
+            <div <%=extension('react-tag.*', 'component-body-attributes', { cell }).join(' ')%>>
+                <%=extension('react-component-children$', undefined, { cell })[0].trim()%>
             </div>
         </section>;
     }

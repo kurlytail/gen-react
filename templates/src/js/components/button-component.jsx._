@@ -6,7 +6,7 @@ const className = lodash.upperFirst(lodash.camelCase(cell.name));
 
 class <%=className%> extends Component {
     render() {
-        return <button type={'button'} <%=extension('react-tag-.*', 'component-attributes').join(' ')%>>
+        return <button type={'button'} <%=extension('react-tag-.*', 'component-attributes', { cell }).join(' ')%>>
             {lodash.startCase(this.props.label)}
         </button>;
     }

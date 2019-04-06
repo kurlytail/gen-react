@@ -6,11 +6,11 @@ const className = lodash.upperFirst(lodash.camelCase(cell.name));
 
 class <%=className%> extends Component {
     render() {
-        return <div <%=extension('react-tag.*', 'email-div-attributes').join(' ')%>>
-            <label htmlFor={this.props.label} <%=extension('react-tag.*', 'email-label-attributes').join(' ')%>>
+        return <div <%=extension('react-tag.*', 'component-attributes', { cell }).join(' ')%>>
+            <label htmlFor={this.props.label} <%=extension('react-tag.*', 'component-label-attributes', { cell }).join(' ')%>>
                 {lodash.startCase(this.props.label)}
             </label>
-            <input type={'email'} name={this.props.label} <%=extension('react-tag.*', 'email-attributes').join(' ')%>/>
+            <input type={'email'} name={this.props.label} <%=extension('react-tag.*', 'component-input-attributes', { cell }).join(' ')%>/>
         </div>
     }
 }
