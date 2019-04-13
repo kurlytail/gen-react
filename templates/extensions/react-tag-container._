@@ -1,5 +1,5 @@
-<%if (labels.includes('component-attributes')) {%>
+<%if (labels.includes('container-attributes')) {%>
 className="<%=lodash.upperFirst(lodash.camelCase(args.cell.name))%>"
-<%} else if (labels.includes('component-child-attributes')) {%>
+<%} else if (labels.includes('container-child-attributes')) {%>
 id="<%=lodash.upperFirst(lodash.camelCase(args.tube.name))%>"
 <%}%>

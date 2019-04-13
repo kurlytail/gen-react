@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`# integration test ## should generate design and run react commands 1`] = `
-"info: Loaded generator @kurlytail/gen-npm@1.2.3
+"info: Loaded generator @kurlytail/gen-npm@1.2.6
 
 info: loading map node_modules/@kurlytail/gen-npm/templates/map.json
 info: loading map templates/map.json
@@ -37,6 +37,7 @@ info: Generated testoutput/jsdoc.json from template templates/jsdoc.json._
 info: Generated testoutput/src/js/index.jsx from template templates/src/js/index.jsx._
 info: loading extension templates/extensions/react-component-import-components._
 info: loading extension templates/extensions/react-component-import-base._
+info: loading extension templates/extensions/react-tag-container._
 info: loading extension templates/extensions/react-tag-component._
 info: Generated testoutput/src/js/components/CheckboxComponent.jsx from template templates/src/js/components/checkbox-component.jsx._
 info: Generated testoutput/src/js/components/__tests__/CheckboxComponent.jsx from template templates/src/js/components/__tests__/component.jsx._
