@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`# integration test ## should generate design and run react commands 1`] = `
-"info: Loaded generator @kurlytail/gen-npm@1.2.18
+"info: Loaded generator @kurlytail/gen-npm@1.2.20
 
 info: loading map node_modules/@kurlytail/gen-npm/templates/map.json
 info: loading map templates/map.json
